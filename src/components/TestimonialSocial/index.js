@@ -1,0 +1,1 @@
+export { TestimonialSocial } from "./TestimonialSocial";

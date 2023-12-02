@@ -1,0 +1,140 @@
+.login-group {
+  height: 57px;
+  width: 146px;
+}
+
+.login-group .overlap-group-wrapper {
+  height: 57px;
+  left: 46px;
+  position: relative;
+}
+
+.login-group .overlap-group {
+  height: 57px;
+  position: relative;
+}
+
+.login-group .login-2 {
+  height: 57px !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 57px !important;
+}
+
+.login-group .rectangle {
+  background-color: #f87c56;
+  border-radius: 8px;
+  height: 54px;
+  left: 154px;
+  position: absolute;
+  top: 3px;
+  width: 134px;
+}
+
+.login-group .LOGIN {
+  font-family: "Nunito Sans", Helvetica;
+  font-size: 25.9px;
+  font-weight: 700;
+  left: 52px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-shadow: 0px 4px 4px #00000040;
+  top: 11px;
+}
+
+.login-group .white-login-default {
+  width: 312px;
+}
+
+.login-group .white-login-orange-login {
+  width: 146px;
+}
+
+.login-group .overlap-group.white-login-default .LOGIN {
+  color: #ffffff !important;
+  width: 260px;
+}
+
+.login-group .overlap-group.white-login-orange-login .LOGIN {
+  color: #f87c56;
+  width: 94px;
+}
+
+.login-group .frame-7 {
+  align-items: flex-start;
+  border: 1px solid;
+  border-color: var(--muted);
+  border-radius: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 0;
+  overflow: hidden;
+  padding: 4px 20px;
+  position: absolute;
+  top: 440px;
+}
+
+.login-group .frame-8 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+}
+
+.login-group .frame-9 {
+  align-items: center;
+  border: 1px solid;
+  border-color: var(--muted);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  left: 213px;
+  overflow: hidden;
+  padding: 4px 20px;
+  position: absolute;
+  top: 440px;
+  width: 190px;
+}
+
+.login-group .frame-7:hover,
+.login-group .frame-9:hover{
+  background: #f87c56 !important;
+  cursor: pointer;
+}
+
+.login-group .rectangle:hover{
+  background: #ce5a37 !important;
+  cursor: pointer;
+}
+
+.login-group .signin {
+  font-family: "Nunito Sans", Helvetica;
+  font-size: 25.9px;
+  font-weight: 700;
+  left: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-shadow: 0px 4px 4px #00000040;
+  top: 11px;
+}
+
+.login-group .login-btn {
+  font-family: "Nunito Sans", Helvetica;
+  font-size: 25.9px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-shadow: 0px 4px 4px #00000040;
+}
+
+.login-group a.login-btn:hover .LOGIN {
+  color: #ce5a37 !important;
+}

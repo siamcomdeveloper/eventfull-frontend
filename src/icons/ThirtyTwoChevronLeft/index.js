@@ -1,0 +1,1 @@
+export { ThirtyTwoChevronLeft } from "./ThirtyTwoChevronLeft";

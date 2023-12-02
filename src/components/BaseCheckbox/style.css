@@ -1,0 +1,7 @@
+.base-checkbox {
+  border: 1px solid;
+  border-color: var(--grey-600);
+  border-radius: 2px;
+  height: 16px;
+  width: 16px;
+}

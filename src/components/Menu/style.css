@@ -1,0 +1,142 @@
+.menu {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 11.5px;
+  position: relative;
+}
+
+.menu .text-wrapper {
+  font-family: "Poppins", Helvetica;
+  font-size: 10.6px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -0.44px;
+  position: relative;
+  width: fit-content;
+}
+
+.menu .div {
+  font-family: "Poppins", Helvetica;
+  font-size: 10.6px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -0.44px;
+  position: relative;
+  width: fit-content;
+}
+
+.menu .text-wrapper-2 {
+  font-family: "Poppins", Helvetica;
+  font-size: 10.6px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -0.44px;
+  position: relative;
+  width: fit-content;
+}
+
+.menu .text-wrapper-3 {
+  font-family: "Poppins", Helvetica;
+  font-size: 10.6px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -0.44px;
+  position: relative;
+  width: fit-content;
+}
+
+.menu .default {
+  color: #ffffff;
+}
+
+.menu .about-us {
+  color: #ffffff;
+}
+
+.menu .pricing {
+  color: #ffffff;
+}
+
+.menu .vendors {
+  color: #ffffff;
+}
+
+.menu .home {
+  color: #f87c56;
+}
+
+.menu .menu-home-default {
+  color: #ffffff;
+}
+
+.menu .menu-home-about-us {
+  color: #ffffff;
+}
+
+.menu .menu-home-pricing {
+  color: #ffffff;
+}
+
+.menu .menu-home-vendors {
+  color: #f87c56;
+}
+
+.menu .menu-home-home {
+  color: #ffffff;
+}
+
+.menu .menu-home-0-default {
+  color: #ffffff;
+}
+
+.menu .menu-home-0-about-us {
+  color: #f87c56;
+}
+
+.menu .menu-home-0-pricing {
+  color: #ffffff;
+}
+
+.menu .menu-home-0-vendors {
+  color: #ffffff;
+}
+
+.menu .menu-home-0-home {
+  color: #ffffff;
+}
+
+.menu .menu-home-1-default {
+  color: #ffffff;
+}
+
+.menu .menu-home-1-about-us {
+  color: #ffffff;
+}
+
+.menu .menu-home-1-pricing {
+  color: #f87c56;
+}
+
+.menu .menu-home-1-vendors {
+  color: #ffffff;
+}
+
+.menu .menu-home-1-home {
+  color: #ffffff;
+}
+
+.menu a.menu-link,
+.menu .menu-link{
+  color: #ffffff !important;
+}
+
+.menu a.menu-link:hover,
+.menu .menu-link:hover{
+  color: #f87c56 !important;
+  text-decoration: none;
+  cursor: pointer;
+}

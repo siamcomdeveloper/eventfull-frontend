@@ -1,0 +1,101 @@
+.testimonial-social {
+  align-items: flex-start;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  position: relative;
+  width: 400px;
+}
+
+.testimonial-social .avatar {
+  height: 48px;
+  object-fit: cover;
+  position: relative;
+  width: 48px;
+}
+
+.testimonial-social .text {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 12px;
+  position: relative;
+}
+
+.testimonial-social .user-data {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.testimonial-social .first-last {
+  align-self: stretch;
+  color: var(--grey-600);
+  font-family: var(--header-h4-font-family);
+  font-size: var(--header-h4-font-size);
+  font-style: var(--header-h4-font-style);
+  font-weight: var(--header-h4-font-weight);
+  letter-spacing: var(--header-h4-letter-spacing);
+  line-height: var(--header-h4-line-height);
+  margin-top: -1px;
+  position: relative;
+}
+
+.testimonial-social .p {
+  align-self: stretch;
+  color: transparent;
+  font-family: var(--body-large-font-family);
+  font-size: var(--body-large-font-size);
+  font-style: var(--body-large-font-style);
+  font-weight: var(--body-large-font-weight);
+  letter-spacing: var(--body-large-letter-spacing);
+  line-height: var(--body-large-line-height);
+  position: relative;
+  margin-bottom: 0;
+}
+
+.testimonial-social .span {
+  color: #6d7391;
+  font-family: var(--body-large-font-family);
+  font-size: var(--body-large-font-size);
+  font-style: var(--body-large-font-style);
+  font-weight: var(--body-large-font-weight);
+  letter-spacing: var(--body-large-letter-spacing);
+  line-height: var(--body-large-line-height);
+}
+
+.testimonial-social .text-wrapper-8 {
+  color: #a1afcc;
+  font-family: var(--body-large-font-family);
+  font-size: var(--body-large-font-size);
+  font-style: var(--body-large-font-style);
+  font-weight: var(--body-large-font-weight);
+  letter-spacing: var(--body-large-letter-spacing);
+  line-height: var(--body-large-line-height);
+}
+
+.testimonial-social .text-wrapper-9 {
+  color: #26263f;
+  font-family: var(--body-large-font-family);
+  font-size: var(--body-large-font-size);
+  font-style: var(--body-large-font-style);
+  font-weight: var(--body-large-font-weight);
+  letter-spacing: var(--body-large-letter-spacing);
+  line-height: var(--body-large-line-height);
+}
+
+.testimonial-social .text-wrapper-10 {
+  color: #605dec;
+  font-family: var(--body-large-font-family);
+  font-size: var(--body-large-font-size);
+  font-style: var(--body-large-font-style);
+  font-weight: var(--body-large-font-weight);
+  letter-spacing: var(--body-large-letter-spacing);
+  line-height: var(--body-large-line-height);
+}

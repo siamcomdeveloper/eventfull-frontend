@@ -1,0 +1,47 @@
+import { BaseCalendarRow } from ".";
+
+export default {
+  title: "Components/BaseCalendarRow",
+  component: BaseCalendarRow,
+};
+
+export const Default = {
+  args: {
+    className: {},
+    calendarDateStateProp: "available",
+    calendarDateStateAvailableClassName: {},
+    calendarDateBaseCalendarDateBaseCalendarDateClassName: {},
+    calendarDateBaseCalendarDateLabelClassName: {},
+    calendarDateStateProp1: "available",
+    calendarDateStateAvailableClassNameOverride: {},
+    calendarDateBaseCalendarDateText: "1",
+    calendarDateBaseCalendarDateBaseCalendarDateClassNameOverride: {},
+    calendarDateBaseCalendarDateLabelClassNameOverride: {},
+    calendarDateStateProp2: "available",
+    calendarDateStateHoverClassName: {},
+    calendarDateBaseCalendarDateText1: "1",
+    calendarDateBaseCalendarDateLabelWrapperClassName: {},
+    calendarDateBaseCalendarDateDivClassName: {},
+    calendarDateStateProp3: "available",
+    calendarDateStateHoverClassNameOverride: {},
+    calendarDateBaseCalendarDateText2: "1",
+    calendarDateBaseCalendarDateLabelWrapperClassNameOverride: {},
+    calendarDateBaseCalendarDateDivClassNameOverride: {},
+    calendarDateStateProp4: "available",
+    calendarDateStateUnavailableClassName: {},
+    calendarDateBaseCalendarDateText3: "1",
+    calendarDateBaseCalendarDateBaseCalendarDateClassName1: {},
+    calendarDateBaseCalendarDateLabelClassName1: {},
+    calendarDateStateProp5: "available",
+    calendarDateStateUnavailableClassNameOverride: {},
+    calendarDateBaseCalendarDateText4: "1",
+    calendarDateBaseCalendarDateBaseCalendarDateClassName2: {},
+    calendarDateBaseCalendarDateLabelClassName2: {},
+    calendarDateStateProp6: "available",
+    calendarDateStateAdjacentMonthClassName: {},
+    calendarDateBaseCalendarDateText5: "1",
+    calendarDateBaseCalendarDateBaseCalendarDateClassName3: {},
+    calendarDateBaseCalendarDateLabelClassName3: {},
+    calendarDateBaseCalendarDateText6: "1",
+  },
+};

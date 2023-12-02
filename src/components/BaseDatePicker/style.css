@@ -1,0 +1,117 @@
+.base-date-picker {
+  align-items: flex-start;
+  background-color: #ffffff;
+  border: 0.67px solid;
+  border-color: var(--grey-200);
+  border-radius: 8.02px;
+  box-shadow: 0px 8.02px 16.05px #1b3a770d, 0px 16.05px 40.12px #062e7d0d, 0px 1.34px 2.67px #0704921a;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  width: 712px;
+}
+
+.base-date-picker .divider {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  width: 100%;
+}
+
+.base-date-picker .calendar-section {
+  align-items: center;
+  align-self: stretch;
+  background-color: #ffffff;
+  display: flex;
+  gap: 43.47px;
+  height: 323.65px;
+  justify-content: center;
+  padding: 5.35px 5.35px 10.7px;
+  position: relative;
+  width: 100%;
+}
+
+.base-date-picker .icon-instance-node {
+  height: 21.4px !important;
+  position: relative !important;
+  width: 21.4px !important;
+}
+
+.base-date-picker .base-calendar-instance {
+  flex: 0 0 auto !important;
+  gap: 7.76px !important;
+  padding: 15.52px !important;
+}
+
+.base-date-picker .design-component-instance-node {
+  gap: 7.76px !important;
+}
+
+.base-date-picker .base-calendar-2 {
+  margin-top: -0.97px !important;
+}
+
+.base-date-picker .base-calendar-3 {
+  height: 31.03px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  width: 31.03px !important;
+}
+
+.base-date-picker .base-calendar-4 {
+  height: 31.03px !important;
+  position: relative !important;
+  width: 31.03px !important;
+}
+
+.base-date-picker .base-calendar-5 {
+  height: 31px !important;
+  width: 31px !important;
+}
+
+.base-date-picker .base-calendar-6 {
+  font-size: 13.6px !important;
+  font-weight: 600 !important;
+  height: 23px !important;
+  width: 23px !important;
+}
+
+.base-date-picker .base-calendar-7 {
+  color: #7b8db0 !important;
+  height: 23px !important;
+  width: 23px !important;
+}
+
+.base-date-picker .base-calendar-8 {
+  height: 23px !important;
+  width: 23px !important;
+}
+
+.base-date-picker .base-calendar-9 {
+  flex: 0 0 auto !important;
+  gap: 7.7px !important;
+  padding: 15.4px !important;
+}
+
+.base-date-picker .base-calendar-10 {
+  gap: 7.7px !important;
+}
+
+.base-date-picker .base-calendar-11 {
+  margin-top: -0.96px !important;
+}
+
+.base-date-picker .base-calendar-12 {
+  height: 30.79px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  width: 30.79px !important;
+}
+
+.base-date-picker .base-calendar-13 {
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  height: 23px !important;
+  width: 23px !important;
+}

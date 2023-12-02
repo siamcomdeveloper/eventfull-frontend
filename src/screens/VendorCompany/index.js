@@ -1,0 +1,1 @@
+export { VendorCompany } from "./VendorCompany";

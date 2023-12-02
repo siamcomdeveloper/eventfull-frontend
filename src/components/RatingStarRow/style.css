@@ -1,0 +1,6 @@
+.rating-star-row {
+  align-items: flex-start;
+  display: inline-flex;
+  padding: 8px 0px 0px;
+  position: relative;
+}

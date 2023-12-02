@@ -1,0 +1,44 @@
+.base-calendar {
+  align-items: flex-start;
+  background-color: #ffffff;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  position: relative;
+}
+
+.base-calendar .month {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.base-calendar .month-year {
+  color: #000000;
+  flex: 1;
+  font-family: var(--header-h6-font-family);
+  font-size: var(--header-h6-font-size);
+  font-style: var(--header-h6-font-style);
+  font-weight: var(--header-h6-font-weight);
+  letter-spacing: var(--header-h6-letter-spacing);
+  line-height: var(--header-h6-line-height);
+  margin-top: -1px;
+  position: relative;
+}
+
+.base-calendar .date-grid {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.base-calendar .base-calendar-row-instance {
+  flex: 0 0 auto !important;
+}

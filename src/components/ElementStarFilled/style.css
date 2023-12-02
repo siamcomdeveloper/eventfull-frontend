@@ -1,0 +1,15 @@
+.element-star-filled {
+  border-radius: 4px;
+  height: 24px;
+  overflow: hidden;
+  position: relative;
+  width: 24px;
+}
+
+.element-star-filled .star {
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  top: 3px;
+  width: 16px;
+}

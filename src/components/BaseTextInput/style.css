@@ -1,0 +1,33 @@
+.base-text-input {
+  align-items: flex-end;
+  background-color: var(--true-white);
+  border: 1px solid;
+  border-color: var(--grey-600);
+  border-radius: 4px;
+  display: flex;
+  gap: 8px;
+  overflow: hidden;
+  padding: 8px 12px;
+  position: relative;
+  width: 252px;
+}
+
+.base-text-input .element-money-price-cost {
+  height: 32px !important;
+  position: relative !important;
+  width: 32px !important;
+}
+
+.base-text-input .div {
+  color: var(--grey-600);
+  flex: 1;
+  font-family: var(--body-large-font-family);
+  font-size: var(--body-large-font-size);
+  font-style: var(--body-large-font-style);
+  font-weight: var(--body-large-font-weight);
+  height: 32px;
+  letter-spacing: var(--body-large-letter-spacing);
+  line-height: var(--body-large-line-height);
+  margin-top: -1px;
+  position: relative;
+}

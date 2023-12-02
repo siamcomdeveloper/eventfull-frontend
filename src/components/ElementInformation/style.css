@@ -1,0 +1,25 @@
+.element-information {
+  border-radius: 4px;
+  height: 32px;
+  overflow: hidden;
+  width: 32px;
+}
+
+.element-information .union-wrapper {
+  border: 2px solid;
+  border-color: #f87c56;
+  border-radius: 9px;
+  height: 18px;
+  left: 7px;
+  position: relative;
+  top: 7px;
+  width: 18px;
+}
+
+.element-information .union {
+  height: 9px;
+  left: 6px;
+  position: absolute;
+  top: 2px;
+  width: 2px;
+}

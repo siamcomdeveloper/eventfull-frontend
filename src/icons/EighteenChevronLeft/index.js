@@ -1,0 +1,1 @@
+export { EighteenChevronLeft } from "./EighteenChevronLeft";

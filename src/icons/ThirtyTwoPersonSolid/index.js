@@ -1,0 +1,1 @@
+export { ThirtyTwoPersonSolid } from "./ThirtyTwoPersonSolid";

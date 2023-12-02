@@ -1,0 +1,1 @@
+export { ElementStarFilled } from "./ElementStarFilled";

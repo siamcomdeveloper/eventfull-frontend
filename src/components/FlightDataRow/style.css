@@ -1,0 +1,27 @@
+.flight-data-row {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  gap: 8px;
+  padding: 4px 16px;
+  position: relative;
+  width: 840px;
+}
+
+.flight-data-row .hawaiian-airlines-instance {
+  position: relative !important;
+}
+
+.flight-data-row.selected {
+  background-color: #f6f5fd;
+  border: 1px solid;
+  border-color: var(--purple-blue);
+}
+
+.flight-data-row.default {
+  background-color: var(--true-white);
+}
+
+.flight-data-row.hover {
+  background-color: #f6f5fd;
+}

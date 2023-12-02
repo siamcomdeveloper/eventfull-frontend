@@ -1,0 +1,15 @@
+.element-star-unfilled-wrapper {
+  border-radius: 4px;
+  height: 24px;
+  overflow: hidden;
+  position: relative;
+  width: 24px;
+}
+
+.element-star-unfilled-wrapper .star-4 {
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  top: 3px;
+  width: 16px;
+}

@@ -1,0 +1,22 @@
+.base-calendar-date {
+  background-color: var(--true-white);
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.base-calendar-date .label {
+  color: var(--grey-900);
+  font-family: var(--body-small-font-family);
+  font-size: var(--body-small-font-size);
+  font-style: var(--body-small-font-style);
+  font-weight: var(--body-small-font-weight);
+  height: 24px;
+  left: 4px;
+  letter-spacing: var(--body-small-letter-spacing);
+  line-height: var(--body-small-line-height);
+  position: absolute;
+  text-align: center;
+  top: 3px;
+  width: 24px;
+}

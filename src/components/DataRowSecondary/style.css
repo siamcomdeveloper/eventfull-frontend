@@ -1,0 +1,32 @@
+.data-row-secondary {
+  align-items: flex-start;
+  display: flex;
+  gap: 34px;
+  position: relative;
+  width: 600px;
+}
+
+.data-row-secondary .text-wrapper {
+  color: #7b8db0;
+  flex: 1;
+  font-family: "Nunito Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+}
+
+.data-row-secondary .div {
+  color: #7b8db0;
+  flex: 1;
+  font-family: "Nunito Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  text-align: right;
+}

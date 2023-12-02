@@ -1,0 +1,219 @@
+.category-drop-down {
+  -webkit-backdrop-filter: blur(29px) brightness(100%);
+  backdrop-filter: blur(29px) brightness(100%);
+  background-color: #ffffffde;
+  height: 481px;
+  width: 1920px;
+}
+
+.category-drop-down-group-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  height: 284px;
+  justify-content: space-around;
+  left: 221px;
+  position: relative;
+  top: 79px;
+  width: 1518px;
+}
+
+.category-drop-down .category-drop-down-group {
+  height: 227.36px;
+  position: relative;
+  width: 1442.56px;
+}
+
+.category-drop-down .category-drop-down-overlap {
+  height: 175px;
+  left: 976px;
+  position: absolute;
+  top: 4px;
+  width: 471px;
+}
+
+.category-drop-down .category-drop-down-planner {
+  height: 175px;
+  left: 232px;
+  position: absolute;
+  top: 0;
+  width: 238px;
+}
+
+.category-drop-down .category-drop-down-text-wrapper-4 {
+  color: #181e4b;
+  font-family: "Nunito Sans", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 67.9px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 168px;
+}
+
+.category-drop-down .category-drop-down-text-wrapper-5 {
+  color: #2e2e2e;
+  font-family: "Nunito Sans", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 2px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: 70px;
+  width: 232px;
+}
+
+.category-drop-down .category-drop-down-planner-2 {
+  height: 175px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 238px;
+}
+
+.category-drop-down .category-drop-down-text-wrapper-6 {
+  color: #181e4b;
+  font-family: "Nunito Sans", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 67.9px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 148px;
+}
+
+.category-drop-down .category-drop-down-catering {
+  height: 201px;
+  left: 421px;
+  position: absolute;
+  top: 4px;
+  width: 238px;
+}
+
+.category-drop-down .category-drop-down-text-wrapper-7 {
+  color: #181e4b;
+  font-family: "Nunito Sans", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 67.9px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  /* width: 162px; */
+  width: 0;
+}
+
+.category-drop-down .category-drop-down-photography {
+  height: 201px;
+  left: 681px;
+  position: absolute;
+  top: 4px;
+  width: 250px;
+}
+
+.category-drop-down .category-drop-down-text-wrapper-8 {
+  color: #181e4b;
+  font-family: "Nunito Sans", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 67.9px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 246px;
+}
+
+.category-drop-down .category-drop-down-overlap-group-2 {
+  height: 227px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 399px;
+}
+
+.category-drop-down .category-drop-down-decoration {
+  height: 175px;
+  left: 161px;
+  position: absolute;
+  top: 1px;
+  width: 238px;
+}
+
+.category-drop-down .category-drop-down-text-wrapper-9 {
+  color: #181e4b;
+  font-family: "Nunito Sans", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 67.9px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 208px;
+}
+
+.category-drop-down .category-drop-down-venue {
+  height: 227px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 169px;
+}
+
+.category-drop-down .category-drop-down-text-wrapper-10 {
+  color: #181e4b;
+  font-family: "Nunito Sans", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 67.9px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  /* width: 118px; */
+  width: 0;
+}
+
+.category-drop-down .category-drop-down-hotel-winery-park {
+  color: transparent;
+  font-family: "Nunito Sans", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 2px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: 70px;
+  width: 163px;
+}
+
+.category-drop-down span.category-drop-down {
+  color: #f87c56;
+}
+
+.category-drop-down .text-wrapper- {
+  color: #2e2e2e;
+}
+
+.category-drop-down a.main-category{
+ color: #181e4b;
+}
+
+.category-drop-down a.main-category:hover{
+  color: #f56b41;
+  text-decoration: none;
+ }

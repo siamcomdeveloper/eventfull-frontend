@@ -1,0 +1,5 @@
+.base-calendar-row {
+  align-items: flex-start;
+  display: inline-flex;
+  position: relative;
+}

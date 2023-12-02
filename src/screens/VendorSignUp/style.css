@@ -1,0 +1,595 @@
+.user-sign-up {
+  background-color: #ffffff;
+  height: 1042px;
+  position: relative;
+  width: 1536px;
+}
+
+.user-sign-up .frame-57 {
+  left: 175px !important;
+  position: absolute !important;
+  top: 82px !important;
+}
+
+.user-sign-up .frame-57-instance {
+  margin-right: unset !important;
+  width: 404px !important;
+}
+
+.user-sign-up .design-component-instance-node {
+  color: #f87c56 !important;
+}
+
+.user-sign-up .frame-11 {
+  background-color: #f87c56 !important;
+  border-color: unset !important;
+}
+
+.user-sign-up .frame-11:hover {
+  background-color: #f56b41 !important;
+}
+
+.user-sign-up .to-be-a-vendor-sign {
+  color: transparent;
+  font-family: "Poppins", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  left: 175px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 52px;
+}
+
+.user-sign-up .text-wrapper-10 {
+  color: #000000;
+}
+
+.user-sign-up .chris-lee {
+  height: 1042px;
+  left: 754px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 782px;
+}
+
+.user-sign-up .original-logo {
+  height: 72px;
+  left: 264px;
+  object-fit: cover;
+  position: absolute;
+  top: 657px;
+  width: 239px;
+}
+
+/* Frame */
+
+.user-sign-up .frame {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 404px;
+}
+
+.user-sign-up .frame .name-wrapper {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+}
+
+.user-sign-up .frame .name {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.user-sign-up .frame .frame-wrapper {
+  align-items: center;
+  border: 1px solid;
+  border-color: #d9d9d9;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  height: 32px;
+  overflow: hidden;
+  padding: 10px 0px 10px 10px;
+  position: relative;
+  width: 404px;
+}
+
+.user-sign-up .frame .div {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: -1.5px;
+  margin-top: -1.5px;
+  position: relative;
+}
+
+.user-sign-up .frame .text-wrapper {
+  color: var(--muted);
+  font-family: "Poppins", Helvetica;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+/* property-default */
+
+.user-sign-up .property-default {
+  background-color: var(--edf-2f-7);
+  height: 32px;
+  width: 404px;
+}
+
+.user-sign-up .property-default .overlap-group {
+  height: 32px;
+  position: relative;
+}
+
+.user-sign-up .property-default .frame-55 {
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.user-sign-up .property-default .login {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 13px;
+  font-weight: 700;
+  left: 185px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  /* top: 5px; */
+  top: 8px;
+}
+
+/* property-default-wrapper */
+
+.user-sign-up .property-default-wrapper {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 10px;
+  height: 638px;
+  padding: 0px 0px 64px;
+  position: relative;
+}
+
+.user-sign-up .property-default-wrapper .group {
+  height: 638px;
+  margin-bottom: -64px;
+  margin-right: -2px;
+  position: relative;
+  width: 406px;
+}
+
+.user-sign-up .property-default-wrapper .div-wrapper {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 10px;
+  height: 53px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.user-sign-up .property-default-wrapper .text-wrapper-2 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 29px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.user-sign-up .property-default-wrapper .p {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 53px;
+  width: 372px;
+}
+
+.user-sign-up .property-default-wrapper .user-sign-up .frame-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 58px;
+  left: 0;
+  position: absolute;
+  top: 81px;
+  width: 404px;
+}
+
+.user-sign-up .property-default-wrapper .frame-3 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+}
+
+.user-sign-up .property-default-wrapper .text-wrapper-3 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.user-sign-up .property-default-wrapper .frame-4 {
+  align-items: flex-start;
+  border: 1px solid;
+  border-color: #d9d9d9;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  height: 32px;
+  overflow: hidden;
+  padding: 10px 0px 10px 10px;
+  position: relative;
+  width: 404px;
+}
+
+.user-sign-up .property-default-wrapper .frame-5 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: -3px;
+  position: relative;
+}
+
+.user-sign-up .property-default-wrapper .text-wrapper-4 {
+  color: var(--muted);
+  font-family: "Poppins", Helvetica;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.user-sign-up .property-default-wrapper .frame-instance {
+  height: 58px !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 188px !important;
+}
+
+.user-sign-up .property-default-wrapper .frame-55-instance {
+  height: 58px !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 266px !important;
+}
+
+.user-sign-up .property-default-wrapper .overlap-group-wrapper {
+  height: 15px;
+  left: 3px;
+  position: absolute;
+  top: 413px;
+  width: 400px;
+}
+
+.user-sign-up .property-default-wrapper .overlap-group-2 {
+  height: 14px;
+  position: relative;
+}
+
+.user-sign-up .property-default-wrapper .line {
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 7px;
+  width: 400px;
+}
+
+.user-sign-up .property-default-wrapper .frame-6 {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  left: 190px;
+  padding: 0px 3px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+
+.user-sign-up .property-default-wrapper .text-wrapper-5 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.user-sign-up .property-default-wrapper .group-2 {
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: 344px;
+  width: 145px;
+}
+
+.user-sign-up .property-default-wrapper .i-agree-to-the-terms {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 9px;
+  font-weight: 500;
+  left: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 128px;
+}
+
+.user-sign-up .property-default-wrapper .span {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.user-sign-up .property-default-wrapper .text-wrapper-6 {
+  text-decoration: underline;
+}
+
+.user-sign-up .property-default-wrapper .rectangle {
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 2px;
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 9px;
+}
+
+.user-sign-up .property-default-wrapper .group-wrapper {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 23px;
+  left: 113px;
+  position: absolute;
+  top: 535px;
+}
+
+.user-sign-up .property-default-wrapper .have-an-account-sign-wrapper {
+  height: 21px;
+  margin-right: -2px;
+  position: relative;
+  width: 185px;
+}
+
+.user-sign-up .property-default-wrapper .have-an-account-sign {
+  color: transparent;
+  font-family: "Poppins", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.user-sign-up .property-default-wrapper .text-wrapper-7 {
+  color: #000000;
+}
+
+.user-sign-up .property-default-wrapper .text-wrapper-8 {
+  color: #0f3cde;
+}
+
+.user-sign-up .property-default-wrapper .property-1-default {
+  height: 35px !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 388px !important;
+}
+
+.user-sign-up .property-default-wrapper .frame-7 {
+  align-items: flex-start;
+  border: 1px solid;
+  border-color: var(--muted);
+  border-radius: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 0;
+  overflow: hidden;
+  padding: 4px 20px;
+  position: absolute;
+  top: 470px;
+}
+
+.user-sign-up .property-default-wrapper .frame-8 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+}
+
+.user-sign-up .property-default-wrapper .img {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.user-sign-up .property-default-wrapper .text-wrapper-9 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+.user-sign-up .property-default-wrapper .frame-9 {
+  align-items: center;
+  border: 1px solid;
+  border-color: var(--muted);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  left: 213px;
+  overflow: hidden;
+  padding: 4px 20px;
+  position: absolute;
+  top: 470px;
+  width: 190px;
+}
+
+.user-sign-up .property-default-wrapper .frame-10 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+/* Form */
+
+/*
+  background-color: #f87c56;
+  border-color: #ce5a37;
+*/
+.user-sign-up .frame-2 .ant-form-item{
+  width: 100% !important;
+}
+
+.user-sign-up .frame-2 .ant-input{
+  height: 30px !important;
+}
+
+.user-sign-up .frame-2 .ant-input:focus, .user-sign-up .frame-2 .ant-input-focused,
+.user-sign-up .frame-2 .ant-form-item .ant-form-item-control-input .ant-input:hover{
+  border-color: #f87c56;
+}
+
+.user-sign-up .frame-2 .ant-input-affix-wrapper:focus, 
+.user-sign-up .frame-2 .ant-input-affix-wrapper-focused,
+.user-sign-up .frame-2 .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover{
+  border-color: #f87c56 !important;
+}
+
+.user-sign-up .frame-2 .ant-input-affix-wrapper > input.ant-input{
+  border-radius: inherit !important;
+}
+
+.user-sign-up .frame-2 .ant-space-item, .user-sign-up .frame-2 .ant-form-item-control-input .ant-space{
+  width: 100% !important;
+}
+
+.user-sign-up .frame-2 .ant-btn-primary:disabled, .ant-btn-primary.ant-btn-disabled{
+  cursor: not-allowed;
+  border-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.04);
+  box-shadow: none;
+}
+
+.user-sign-up .frame-2 .ant-btn-primary{
+  background-color: #f87c56;
+  border-color: #ce5a37;
+  width: 100%;
+}
+
+.user-sign-up .frame-2 .ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover{
+  background-color: #ce5a37;
+  border-color: #ce5a37;
+}
+
+.user-sign-up .frame-2 .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #f87c56 !important;
+  border-color: #f87c56 !important;
+}
+
+.user-sign-up .frame-2 .ant-checkbox .ant-checkbox-inner,
+.ant-checkbox-disabled .ant-checkbox-inner,
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner,
+.ant-checkbox-input:focus+.ant-checkbox-inner {
+    border-color: #f87c56 !important;
+}
+
+
+.user-sign-up .frame-2 .ant-form-item-required::before{
+  display: none !important;
+}
+
+/* 
+.user-sign-up .frame-2 a.ant-checkbox-signup{
+    color: #1677ff;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.3s;
+} 
+*/
+
+.ant-divider-horizontal.ant-divider-with-text::before, 
+.ant-divider-horizontal.ant-divider-with-text::after{
+  border: 1px solid #eeeeee;
+}
+
+.ant-divider-inner-text{
+  font-size: 12px;
+}
+
+.user-sign-up .property-default-wrapper .frame-7:hover,
+.user-sign-up .property-default-wrapper .frame-9:hover{
+  background: #f87c56 !important;
+  cursor: pointer;
+}
