@@ -29,7 +29,6 @@ export const MainPage = () => {
   });
 
   const signOut = () => {
-    // console.log("signOut click");
     removeJwtToken();
   
     setTimeout(() => {
@@ -81,7 +80,6 @@ export const MainPage = () => {
   function handle(e) {
     const newData = { ...data };
     newData[e.target.id] = e.target.value;
-    // console.log(newData);
     setData(newData);
   }
 
@@ -98,12 +96,6 @@ export const MainPage = () => {
   function submit() {
 
     console.log(data);
-
-    // messageApi.open({
-    //   type: 'success',
-    //   content: 'Searching...',
-    //   duration: 1
-    // });
 
     const urlParams = `?type=${data.category}&location=${data.location}`
 
@@ -237,35 +229,18 @@ export const MainPage = () => {
               </div>
             </div>
             <a href='/'><img className="white-logo" alt="White logo" src="img/whitelogo.png" /></a>
-            {/* <Menu
-              className="navbar"
-              divClassName="menu-instance"
-              divClassName1="menu-instance"
-              divClassName2="menu-instance"
-              divClassNameOverride="menu-instance"
-              menuHome="home"
-            /> */}
             <div className={`menu navbar`}>
               <div className={`div menu-home-home menu-instance`}><a className="menu-link" href='/'>Home</a></div>
               <div className={`div menu-home-home menu-instance`}><div className="menu-link vendor" href='/vendors' onClick={() => { setHoverVendor(!isHoverVendor); }}>Vendors</div></div>
               <div className={`text-wrapper-2 menu-home-0-home menu-instance`}><a className="menu-link" href='/about-us'>About Us</a></div>
               <div className={`text-wrapper-3 menu-home-1-home menu-instance`}><a className="menu-link" href='/princing'>Pricing</a></div>
             </div>
-            
-            {/* <LoginGroup
-              className="login-group-instance"
-              icon={<Login2 className="login-2-instance" />}
-              whiteLogin="default"
-            /> */}
-
             { getJwtToken() ?
             
             <div className={`login-group myaccount-group-instance`}>
               <div className="overlap-group-wrapper">
                 <div className={`overlap-group white-login-default`}>
-                  {/* <a className="login-btn" href='/user-login'>
-                    <Login2 className="login-2-instance" />
-                  </a> */}
+                  
                   <Login2 className="login-2-instance" />
                     <Dropdown
                       overlayClassName="my-account-dropdown"
@@ -441,7 +416,6 @@ export const MainPage = () => {
               <div className="group-wrapper">
                 <div className="group-3">
                   <div className="overlap-group-12">
-                    {/* <img className="line" alt="Line" src="img/line-3.svg" /> */}
                     <div className="text-wrapper-22">Explore Inspirations</div>
                   </div>
                   <div className="button-search">
@@ -454,7 +428,6 @@ export const MainPage = () => {
               <div className="group-wrapper">
                 <div className="group-4">
                   <div className="overlap-group-13">
-                    {/* <img className="line-2" alt="Line" src="img/line-8.svg" /> */}
                     <div className="text-wrapper-22">Explore Cities</div>
                   </div>
                   <div className="button-search-2">

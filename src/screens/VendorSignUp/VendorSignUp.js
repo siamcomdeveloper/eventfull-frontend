@@ -46,7 +46,6 @@ export const VendorSignUp = () => {
   function handle(e) {
     const newData = { ...data };
     newData[e.target.id] = e.target.value;
-    // console.log(newData);
     setData(newData);
   }
 
@@ -181,17 +180,7 @@ export const VendorSignUp = () => {
               <div className="overlap-group-2">
                 <Divider style={{ backgroundColor: '1px solid red' }}>Or</Divider>
               </div>
-            </div> 
-            {/* <a href="/" class="property-default property-1-default d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">Signup</a> */}
-    
-            {/* <div className="overlap-group-wrapper">
-              <div className="overlap-group-2">
-                <img className="line" alt="Line" src="https://c.animaapp.com/gLSDdAkA/img/line-2-1.svg" />
-                <div className="frame-6">
-                  <div className="text-wrapper-5">Or</div>
-                </div>
-              </div>
-            </div> */}
+            </div>
 
             <div className="frame-7">
               <a className="frame-8" href='/user-login'>

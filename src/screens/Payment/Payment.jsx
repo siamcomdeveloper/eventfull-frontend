@@ -46,7 +46,6 @@ export const Payment = () => {
   });
 
   const signOut = () => {
-    // console.log("signOut click");
     removeJwtToken();
   
     setTimeout(() => {
@@ -71,7 +70,6 @@ export const Payment = () => {
   function handle(e) {
     const newData = { ...data };
     newData[e.target.id] = e.target.value;
-    // console.log(newData);
     setData(newData);
   }
 
@@ -220,122 +218,8 @@ export const Payment = () => {
             <div className="group-wrapper">
               <div className="group-2">
                 <img style={{ width: 1342 }}  src="/img/payment-image.png" />
-                {/* <div className="text-wrapper-8">Plans</div>
-                <div className="overlap-group">
-                  <div className="text-wrapper-9">Book Vendors</div>
-                  <p className="p">Book a vendor based on your need . No limits.</p>
-                </div>
-                <div className="overlap-2">
-                  <div className="text-wrapper-9">View Price</div>
-                  <div className="group-3">
-                    <div className="group-4" />
-                    <div className="group-5" />
-                  </div>
-                  <p className="p">Choose your vendors quickly and conveniently.</p>
-                </div>
-                <div className="overlap-3">
-                  <div className="text-wrapper-10">Send Booking Request</div>
-                  <p className="p">Send booking request to your preferred vendors.</p>
-                </div>
-                <p className="text-wrapper-11">For power users who want to event more.</p>
-                <div className="terms-of-service">
-                  Terms of Service
-                  <br />
-                  Privacy Policy
-                </div>
-                <div className="rectangle-7" />
-                <div className="group-6">
-                  <div className="text-wrapper-12">Premium</div>
-                  <img className="element" alt="Element" src="/img/1.png" />
-                </div>
-                <div className="frame">
-                  <div className="overlap-group-wrapper">
-                    <div className="element-per-month-paid-wrapper">
-                      <p className="div-3">
-                        <span className="span">
-                          $0
-                          <br />
-                        </span>
-                        <span className="text-wrapper-13">
-                          per month
-                          <br />
-                          paid monthly
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="overlap-group-wrapper">
-                    <div className="overlap-4">
-                      <img className="yes-svgrepo-com" alt="Yes svgrepo com" src="/img/yes-svgrepo-com-5.svg" />
-                      <p className="div-3">
-                        <span className="span">
-                          $5.49
-                          <br />
-                        </span>
-                        <span className="text-wrapper-13">
-                          per month
-                          <br />
-                          paid monthly
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="overlap-wrapper">
-                    <div className="element-per-year-paid-wrapper">
-                      <p className="div-3">
-                        <span className="span">
-                          $49.99
-                          <br />
-                        </span>
-                        <span className="text-wrapper-13">
-                          per year
-                          <br />
-                          paid annually
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="div-wrapper">
-                  <div className="overlap-5">
-                    <div className="text-wrapper-14">Subscribe</div>
-                  </div>
-                </div>
-                <img className="img" alt="Yes svgrepo com" src="/img/yes-svgrepo-com-4.svg" />
-                <img className="yes-svgrepo-com-2" alt="Yes svgrepo com" src="/img/yes-svgrepo-com-3.svg" />
-                <img className="yes-svgrepo-com-3" alt="Yes svgrepo com" src="/img/yes-svgrepo-com-2.svg" />
-                <div className="group-7">
-                  <div className="overlap-6">
-                    <div className="view-vendor-s">View vendor&#39;s availability calendar.</div>
-                    <img className="yes-svgrepo-com-4" alt="Yes svgrepo com" src="/img/yes-svgrepo-com-1.svg" />
-                  </div>
-                </div>
-                <div className="group-8">
-                  <div className="overlap-6">
-                    <div className="view-vendor-s">View vendor&#39;s availability calendar.</div>
-                    <img className="yes-svgrepo-com-4" alt="Yes svgrepo com" src="/img/yes-svgrepo-com.svg" />
-                  </div>
-                </div> */}
               </div>
             </div>
-            {/* <Menu
-              className="navbar"
-              divClassName="menu-instance"
-              divClassName1="menu-instance"
-              divClassName2="menu-instance"
-              divClassNameOverride="menu-instance"
-              menuHome="default"
-            />
-
-            <div className="login-group">
-              <div className="overlap-7">
-                <div className="login">
-                  <div className="ellipse" />
-                  <img className="ellipse-2" alt="Ellipse" src="/img/ellipse-8.svg" />
-                </div>
-                <div className="text-wrapper-15">MyAccount</div>
-              </div>
-            </div> */}
             
           </div>
           <footer className="footer">

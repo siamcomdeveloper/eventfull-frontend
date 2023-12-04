@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import { ConfigProvider, Layout, Form, Input, Button, Space, Checkbox, Divider, message } from 'antd';
 
-// import { PropertyDefaultWrapper } from "../../components/PropertyDefaultWrapper";
 import "./style.css";
 
 const SubmitButton = ({ form }) => {
@@ -47,7 +46,6 @@ export const UserSignUp = () => {
   function handle(e) {
     const newData = { ...data };
     newData[e.target.id] = e.target.value;
-    // console.log(newData);
     setData(newData);
   }
 
@@ -103,60 +101,13 @@ export const UserSignUp = () => {
     <ConfigProvider theme={customAntdStyle}>
       {contextHolder}
       <div className="user-sign-up">
-        {/* <PropertyDefaultWrapper
-          appleLogo="https://c.animaapp.com/gLSDdAkA/img/icons8-apple-logo-1.svg"
-          className="frame-57"
-          google="https://c.animaapp.com/gLSDdAkA/img/icons8-google-1-1.svg"
-          groupClassName="frame-57-instance"
-          hasDiv={false}
-          property1="default"
-          propertyDefaultFrameFrameClassName="frame-11"
-          spanClassName="design-component-instance-node"
-        /> */}
-
+       
         <div className={`property-default-wrapper frame-57`}>
           <div className={`group frame-57-instance`}>
             <div className="div-wrapper">
               <div className="text-wrapper-2">Get Started Now</div>
             </div>
-            {/* {hasDiv && <p className="p">Enter your Credentials to access your account</p>} */}
-
-            {/* <div className="frame-2">
-              <div className="frame-3">
-                <div className="text-wrapper-3">Name</div>
-              </div>
-              <div className="frame-4">
-                <div className="frame-5">
-                  <div className="text-wrapper-4">Enter your name</div>
-                </div>
-              </div>
-            </div> */}
-            {/* <Frame className="frame-instance" text="Enter your email" />
-            <Frame className="frame-55-instance" text="Name" /> */}
-            {/* <div className="overlap-group-wrapper">
-              <div className="overlap-group-2">
-                <img className="line" alt="Line" src="https://c.animaapp.com/gLSDdAkA/img/line-2-1.svg" />
-                <div className="frame-6">
-                  <div className="text-wrapper-5">Or</div>
-                </div>
-              </div>
-            </div>
-            <div className="group-2">
-              <p className="i-agree-to-the-terms">
-                <span className="span">I agree to the </span>
-                <span className="text-wrapper-6">terms &amp; policy</span>
-              </p>
-              <div className="rectangle" />
-            </div>
-            <div className="group-wrapper">
-              <div className="have-an-account-sign-wrapper">
-                <p className="have-an-account-sign">
-                  <span className="text-wrapper-7">Have an account?&nbsp;&nbsp;</span>
-                  <span className={`text-wrapper-8 ${spanClassName}`}>Sign In</span>
-                </p>
-              </div>
-            </div> */}
-
+            
             <Form
               onFinish={() => submit()}
               form={form}
@@ -189,7 +140,6 @@ export const UserSignUp = () => {
                       message: 'Please input your E-mail!',
                     },
                   ]}
-                  // style={{width:'400px'}}
                   className='text-wrapper-3'
                 >
                   <Input id="email" placeholder="Enter your email" value={data.email} onChange={(e) => handle(e)}/>
@@ -199,7 +149,6 @@ export const UserSignUp = () => {
                   name="password"
                   label="Password"
                   rules={[{ required: true, message: 'Please input your password!' }]}
-                  // style={{width:'400px'}}
                   className='text-wrapper-3'
                 >
                   <Input.Password placeholder="Enter your password" id="password" value={data.password} onChange={(e) => handle(e)}/>
@@ -223,7 +172,6 @@ export const UserSignUp = () => {
                 <Form.Item>
                   <Space>
                     <SubmitButton form={form} />
-                    {/* <Button htmlType="Signup">Signup</Button> */}
                   </Space>
                 </Form.Item>
               </div>
@@ -234,17 +182,7 @@ export const UserSignUp = () => {
                 <Divider style={{ backgroundColor: '1px solid red' }}>Or</Divider>
               </div>
             </div> 
-            {/* <a href="/" class="property-default property-1-default d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">Signup</a> */}
-    
-            {/* <div className="overlap-group-wrapper">
-              <div className="overlap-group-2">
-                <img className="line" alt="Line" src="https://c.animaapp.com/gLSDdAkA/img/line-2-1.svg" />
-                <div className="frame-6">
-                  <div className="text-wrapper-5">Or</div>
-                </div>
-              </div>
-            </div> */}
-
+          
             <div className="frame-7">
               <a className="frame-8" href='/user-login'>
                 <img className="img" alt="Google" src="https://c.animaapp.com/gLSDdAkA/img/icons8-google-1-1.svg" />

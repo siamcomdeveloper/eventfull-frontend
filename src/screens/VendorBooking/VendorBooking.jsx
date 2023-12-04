@@ -39,7 +39,6 @@ export const VendorBooking = () => {
   const [messageApi, contextHolder] = message.useMessage();
 
   const signOut = () => {
-    // console.log("signOut click");
     removeJwtToken();
   
     setTimeout(() => {
@@ -230,7 +229,6 @@ export const VendorBooking = () => {
                 label: "Approve",
                 icon: <CheckOutlined />,
                 onClick: () => {
-                  // (window.location.href = `/updateRealtor/${record.id}`)
                   handleApprove(record);
                 }
               },
@@ -239,7 +237,6 @@ export const VendorBooking = () => {
                 label: "Decline",
                 icon: <EditOutlined />,
                 onClick: () => {
-                  // (window.location.href = `/updateRealtor/${record.id}`)
                   handleDecline(record);
                 }
               }
@@ -289,9 +286,6 @@ export const VendorBooking = () => {
               <div className={`login-group myaccount-group-instance`}>
                 <div className="overlap-group-wrapper">
                   <div className={`overlap-group white-login-default`}>
-                    {/* <a className="login-btn" href='/user-login'>
-                      <Login2 className="login-2-instance" />
-                    </a> */}
                     <Login2 className="login-2-instance" />
                       <Dropdown
                         overlayClassName="my-account-dropdown"
@@ -330,7 +324,6 @@ export const VendorBooking = () => {
               </div>
             </div>
 
-            {/* <div className="rectangle-2" /> */}
             <div className="rectangle-3" />
             <div className="overlap-wrapper" id="anchor">
               <div className="overlap-2">
@@ -366,66 +359,6 @@ export const VendorBooking = () => {
               />
             </div>
             
-            {/* <TableFlightList
-              className="table-flight-list-version-a"
-              flightDataRowDataRowCombinedDataRowPrimaryDivClassName="table-flight-list-instance"
-              flightDataRowDataRowCombinedDataRowPrimaryText="Marcus"
-              flightDataRowDataRowCombinedDataRowPrimaryText1="New Request!"
-              flightDataRowDataRowCombinedDataRowPrimaryText2="New Request!"
-              flightDataRowDataRowCombinedDataRowPrimaryText3="Candice"
-              flightDataRowDataRowCombinedDataRowSecondaryHasDiv={false}
-              flightDataRowDataRowCombinedDataRowSecondaryHasDiv1={false}
-              flightDataRowDataRowCombinedDataRowSecondaryText="View Details"
-              flightDataRowDataRowCombinedDataRowSecondaryVisible={false}
-            />
-            <DataRowDivider className="data-row-divider-3" dividerClassName="data-row-divider-4" />
-            <FlightDataRow
-              className="flight-data-row-9"
-              dataRowCombinedDataRowCombinedClassName="flight-data-row-15"
-              dataRowCombinedDataRowPrimaryDataRowPrimaryClassName="flight-data-row-11"
-              dataRowCombinedDataRowPrimaryDivClassName="flight-data-row-10"
-              dataRowCombinedDataRowPrimaryDivClassName1="flight-data-row-13"
-              dataRowCombinedDataRowPrimaryDivClassName2="flight-data-row-14"
-              dataRowCombinedDataRowPrimaryDivClassNameOverride="flight-data-row-10"
-              dataRowCombinedDataRowPrimaryText="Oct 24th - Oct 25th, 2023"
-              dataRowCombinedDataRowPrimaryText1="Canceled"
-              dataRowCombinedDataRowPrimaryText2="7:35 AM - 12:15 PM"
-              dataRowCombinedDataRowPrimaryText3="Candice"
-              dataRowCombinedDataRowSecondaryDataRowSecondaryClassName="flight-data-row-11"
-              dataRowCombinedDataRowSecondaryDivClassName="flight-data-row-10"
-              dataRowCombinedDataRowSecondaryDivClassName1="flight-data-row-10"
-              dataRowCombinedDataRowSecondaryDivClassNameOverride="flight-data-row-12"
-              dataRowCombinedDataRowSecondaryHasDiv={false}
-              dataRowCombinedDataRowSecondaryText=""
-              dataRowCombinedDataRowSecondaryText1="value"
-              dataRowCombinedDataRowSecondaryText2="View Details"
-              stateProp="default"
-              visible={false}
-            />
-            <div className="rectangle-8" />
-            <div className="button-row">
-              <Button
-                buttonPrimaryIconClassName="button-2"
-                className="button-instance"
-                icon={false}
-                iconOnly={false}
-                size="large"
-                stateProp="default"
-                text="Confirm"
-                type="secondary"
-              />
-              <Button
-                buttonPrimaryIconClassName="button-4"
-                className="button-3"
-                icon={false}
-                iconOnly={false}
-                size="large"
-                stateProp="inactive"
-                text="Cancel"
-                type="primary"
-              />
-            </div> */}
-
           </div>
           <footer className="footer">
             <div className="group-wrapper">

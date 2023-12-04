@@ -46,7 +46,6 @@ export const Plans = () => {
   });
 
   const signOut = () => {
-    // console.log("signOut click");
     removeJwtToken();
   
     setTimeout(() => {
@@ -71,7 +70,6 @@ export const Plans = () => {
   function handle(e) {
     const newData = { ...data };
     newData[e.target.id] = e.target.value;
-    // console.log(newData);
     setData(newData);
   }
 
@@ -167,9 +165,6 @@ export const Plans = () => {
               <div className={`login-group myaccount-group-instance`}>
                 <div className="overlap-group-wrapper">
                   <div className={`overlap-group white-login-default`}>
-                    {/* <a className="login-btn" href='/user-login'>
-                      <Login2 className="login-2-instance" />
-                    </a> */}
                     <Login2 className="login-2-instance" />
                       <Dropdown
                         overlayClassName="my-account-dropdown"
@@ -319,24 +314,6 @@ export const Plans = () => {
                 </div>
               </div>
             </div>
-            {/* <Menu
-              className="navbar"
-              divClassName="menu-instance"
-              divClassName1="menu-instance"
-              divClassName2="menu-instance"
-              divClassNameOverride="menu-instance"
-              menuHome="default"
-            />
-
-            <div className="login-group">
-              <div className="overlap-7">
-                <div className="login">
-                  <div className="ellipse" />
-                  <img className="ellipse-2" alt="Ellipse" src="/img/ellipse-8.svg" />
-                </div>
-                <div className="text-wrapper-15">MyAccount</div>
-              </div>
-            </div> */}
             
           </div>
           <footer className="footer">

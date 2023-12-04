@@ -173,9 +173,7 @@ export const VendorSchedule = () => {
               <div className={`login-group myaccount-group-instance`}>
                 <div className="overlap-group-wrapper">
                   <div className={`overlap-group white-login-default`}>
-                    {/* <a className="login-btn" href='/user-login'>
-                      <Login2 className="login-2-instance" />
-                    </a> */}
+                    
                     <Login2 className="login-2-instance" />
                       <Dropdown
                         overlayClassName="my-account-dropdown"
@@ -214,7 +212,6 @@ export const VendorSchedule = () => {
               </div>
             </div>
 
-            {/* <div className="rectangle-2" /> */}
             <div className="rectangle-3" />
             <div className="group-2" id="anchor">
               <div className="overlap-2">
@@ -234,7 +231,6 @@ export const VendorSchedule = () => {
                 <div className="text-wrapper-10">My Schedule</div>
               </div>
             </div>
-            {/* <BaseDatePicker className="base-date-picker-instance" /> */}
 
             <div style={wrapperStyle1}>
               <Calendar fullscreen={false}/>

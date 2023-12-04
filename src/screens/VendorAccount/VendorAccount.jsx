@@ -88,19 +88,6 @@ export const VendorAccount = () => {
         console.log(response);
         setData(response.data);
 
-        // setData((prevData) => ({
-        //   ...prevData,
-        //   _id: response.data._id,
-        //   userId: response.data.userId,
-        //   firstName: response.data.firstName,
-        //   middleName: response.data.middleName,
-        //   lastName: response.data.lastName,
-        //   dateOfBirth: response.data.dateOfBirth,
-        //   emailAddress: response.data.emailAddress,
-        //   phoneNumber: response.data.phoneNumber,
-        //   streetAddress: response.data.streetAddress
-        // }));
-
       })
       .catch((error) => {
         console.log(error);
@@ -108,14 +95,12 @@ export const VendorAccount = () => {
   }, []);
 
   useEffect(() => {
-    // console.log('in useEffect setFieldsValue');
     form.setFieldsValue({
       _id: data._id,
       userId: data.userId,
       firstName: data.firstName,
       middleName: data.middleName,
       lastName: data.lastName,
-      // dateOfBirth: data.dateOfBirth,
       emailAddress: data.emailAddress,
       phoneNumber: data.phoneNumber,
       streetAddress: data.streetAddress
@@ -124,7 +109,6 @@ export const VendorAccount = () => {
 
 
   const signOut = () => {
-    // console.log("signOut click");
     removeJwtToken();
   
     setTimeout(() => {
@@ -149,7 +133,6 @@ export const VendorAccount = () => {
   function handle(e) {
     const newData = { ...data };
     newData[e.target.id] = e.target.value;
-    // console.log(newData);
     setData(newData);
   }
 
@@ -193,26 +176,6 @@ export const VendorAccount = () => {
             duration: 2,
           });
         }, 500);
-
-        // if(result.data.role == 1){
-        //   setTimeout(() => {
-        //     messageApi.open({
-        //       type: 'success',
-        //       content: 'Log in successful!',
-        //       duration: 2,
-        //     });
-        //   }, 500);
-        //   setTimeout(function() { window.location = "/vendor-account"; }, 1000);
-        // }
-        // else{
-        //   setTimeout(() => {
-        //     messageApi.open({
-        //       type: 'error',
-        //       content: 'Please login with a customer account!',
-        //       duration: 2,
-        //     });
-        //   }, 500);
-        // }
         
       })
       .catch((err) => {
@@ -261,9 +224,6 @@ export const VendorAccount = () => {
             <div className={`login-group myaccount-group-instance`}>
               <div className="overlap-group-wrapper">
                 <div className={`overlap-group white-login-default`}>
-                  {/* <a className="login-btn" href='/user-login'>
-                    <Login2 className="login-2-instance" />
-                  </a> */}
                   <Login2 className="login-2-instance" />
                     <Dropdown
                       overlayClassName="my-account-dropdown"
@@ -291,15 +251,6 @@ export const VendorAccount = () => {
             />
             }
 
-            {/* <div className="login-group">
-              <div className="group">
-                <div className="overlap-group">
-                  <div className="text-wrapper-4">SignOut</div>
-                </div>
-              </div>
-              <div className="text-wrapper-5">Are you a customer?</div>
-            </div> */}
-
             <div className="slogan">
               <div className="rectangle" />
               <div className="slogans">
@@ -310,7 +261,6 @@ export const VendorAccount = () => {
                 Celebrate Your Moments
               </div>
             </div>
-            {/* <div className="rectangle-2" /> */}
             <div className="rectangle-3" />
             <div className="overlap-wrapper" id="anchor">
               <div className="overlap-2">
@@ -330,7 +280,6 @@ export const VendorAccount = () => {
             <div className="title-wrapper">
               <div className="title">
                 <div className="abc">Vendor Profile</div>
-                {/* <div className="icon-2" /> */}
               </div>
 
               <Form
@@ -348,7 +297,6 @@ export const VendorAccount = () => {
                       name="firstName"
                       label="First Name"
                       rules={[{ required: true, message: 'Please input your first name!' }]}
-                      // style={{width:'180px'}}
                       className='text-wrapper-3'
                     >
                       <Input id="firstName" placeholder="First name*" value={data.firstName} onChange={(e) => handle(e)}/>
@@ -357,7 +305,6 @@ export const VendorAccount = () => {
                     <Form.Item
                       name="middleName"
                       label="Middle Name"
-                      // style={{paddingLeft: 30}}
                       className='text-wrapper-3'
                     >
                       <Input id="middleName" placeholder="Middle name" value={data.middleName} onChange={(e) => handle(e)}/>
@@ -367,7 +314,6 @@ export const VendorAccount = () => {
                       name="lastName"
                       label="Last Name"
                       rules={[{ required: true, message: 'Please input your last name!' }]}
-                      // style={{paddingLeft: 30}}
                       className='text-wrapper-3'
                     >
                       <Input id="lastName" placeholder="Last name*" value={data.lastName} onChange={(e) => handle(e)}/>
@@ -388,7 +334,6 @@ export const VendorAccount = () => {
                       name="dateOfBirth"
                       label="Date of birth"
                       rules={[{ required: true }]}
-                      // style={{width:'180px', marginLeft:'40px'}}
                       className='antd-datetime-picker'
                       >
                       <DatePicker id="dateOfBirth" placeholder="Date of birth*" value={moment(data.dateOfBirth)} onChange={(e) => handleDateChange(e)}/>
@@ -440,110 +385,12 @@ export const VendorAccount = () => {
                   >
                     <Space>
                       <SubmitButton form={form} />
-                      {/* <Button >Edit</Button> */}
                     </Space>
                   </Form.Item>
                 </div>
               </Form>
 
             </div>
-
-            {/* <img className="separator" alt="Separator" src="/img/separator.svg" /> */}
-            {/* <div className="button-row">
-              <Button
-                buttonPrimaryIconClassName="design-component-instance-node"
-                className="button-instance"
-                icon={false}
-                iconOnly={false}
-                size="large"
-                stateProp="default"
-                text="Save"
-                type="secondary"
-              />
-              <Button
-                buttonPrimaryIconClassName="button-3"
-                className="button-2"
-                icon={false}
-                iconOnly={false}
-                size="large"
-                stateProp="inactive"
-                text="Edit"
-                type="primary"
-              />
-            </div>
-            <TextInput
-              baseTextInputDivClassName="text-input-2"
-              baseTextInputText="First name*"
-              className="text-input-instance"
-              helperText={false}
-              icon="none"
-              placeholder
-              state="default"
-            />
-            <TextInput
-              baseTextInputDivClassName="text-input-2"
-              baseTextInputText="Suffix"
-              className="text-input-3"
-              helperText={false}
-              icon="none"
-              placeholder
-              state="default"
-            />
-            <TextInput
-              baseTextInputDivClassName="text-input-2"
-              baseTextInputText="Email address*"
-              className="text-input-4"
-              helperText={false}
-              icon="none"
-              placeholder
-              state="default"
-            />
-            <TextInput
-              baseTextInputDivClassName="text-input-2"
-              baseTextInputText="Redress number"
-              className="text-input-5"
-              helperText={false}
-              icon="none"
-              placeholder
-              state="default"
-            />
-            <TextInput
-              baseTextInputDivClassName="text-input-2"
-              baseTextInputText="Phone number*"
-              className="text-input-6"
-              helperText={false}
-              icon="none"
-              placeholder
-              state="default"
-            />
-            <TextInput
-              baseTextInputDivClassName="text-input-2"
-              baseTextInputText="Middle"
-              className="text-input-7"
-              helperText={false}
-              icon="none"
-              placeholder
-              state="default"
-            />
-            <TextInput
-              baseTextInputDivClassName="text-input-2"
-              baseTextInputText="Date of birth*"
-              className="text-input-8"
-              helperText
-              icon="none"
-              placeholder
-              state="default"
-              text="MM/DD/YY"
-            />
-            <TextInput
-              baseTextInputDivClassName="text-input-2"
-              baseTextInputText="Last name*"
-              className="text-input-9"
-              helperText={false}
-              icon="none"
-              placeholder
-              state="default"
-            /> */}
           </div>
           <footer className="footer">
             <div className="group-wrapper">

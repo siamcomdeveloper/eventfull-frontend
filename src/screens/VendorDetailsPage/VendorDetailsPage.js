@@ -88,7 +88,6 @@ export const VendorDetailsPage = () => {
   }, []);
 
   const signOut = () => {
-    // console.log("signOut click");
     removeJwtToken();
   
     setTimeout(() => {
@@ -119,36 +118,10 @@ export const VendorDetailsPage = () => {
   const onOk = (value) => {
     console.log('onOk: ', value);
     if(value){
-        // const strStartDatetime = value[0]['$d'].toString();
-        // const arrayStartDatetime = strStartDatetime.split(' ');
-        // console.log(strStartDatetime);
-        // console.log(arrayStartDatetime);
-        // console.log(arrayStartDatetime[0]);
-        // console.log(arrayStartDatetime[1]);
-        // console.log(arrayStartDatetime[2]);
-        // console.log(arrayStartDatetime[3]);
-        // console.log(arrayStartDatetime[4]);
-
-        // const arrayStartTime = arrayStartDatetime[4].split(':');
-        // console.log(arrayStartTime);
-        // console.log(arrayStartTime[0]);
-        // console.log(arrayStartTime[1]);
-
-        // const startDatetime = arrayStartDatetime[1] + ' ' + arrayStartDatetime[2] + ', ' + arrayStartDatetime[3] + ' ' + arrayStartTime[0] + ':' + arrayStartTime[1];
-        
-        // const strEndDatetime = value[1]['$d'].toString();
-        // const arrayEndDatetime = strEndDatetime.split(' ');
-        // const arrayEndTime = arrayEndDatetime[4].split(':');
-        
-        // const endDatetime = arrayEndDatetime[1] + ' ' + arrayEndDatetime[2] + ', ' + arrayEndDatetime[3];
-        // const endDatetime = arrayEndDatetime[1] + ' ' + arrayEndDatetime[2] + ', ' + arrayEndDatetime[3];
-
         const newBookingData = { ...bookingData };
         newBookingData.startDatetime = value[0] != null ? value[0]['$d'].toString() : '';
         newBookingData.endDatetime = value[1] != null ? value[1]['$d'].toString() : '';
         setBookingData(newBookingData);
-
-        //console.log(bookingData);
     }
   };
   
@@ -358,9 +331,6 @@ export const VendorDetailsPage = () => {
             <div className={`login-group myaccount-group-instance`}>
               <div className="overlap-group-wrapper">
                 <div className={`overlap-group white-login-default`}>
-                  {/* <a className="login-btn" href='/user-login'>
-                    <Login2 className="login-2-instance" />
-                  </a> */}
                   <Login2 className="login-2-instance" />
                     <Dropdown
                       overlayClassName="my-account-dropdown"
@@ -430,9 +400,6 @@ export const VendorDetailsPage = () => {
                   <img className="rectangle-4" alt="Rectangle" src={data.image} />
                   <img className="rectangle-5" alt="Rectangle" src="/img/rectangle-19323.png" />
                   <img className="rectangle-6" alt="Rectangle" src="/img/rectangle-19324.png" />
-                  {/* <img className="rectangle-4" alt="Rectangle" src="/img/rectangle-19322.png" />
-                  <img className="rectangle-5" alt="Rectangle" src="/img/rectangle-19323.png" />
-                  <img className="rectangle-6" alt="Rectangle" src="/img/rectangle-19324.png" /> */}
                   <div className="overlap-6">
                     <div className="overlap-7">
                       <div className="text-wrapper-16">Name : {userData.username}</div>
@@ -448,7 +415,6 @@ export const VendorDetailsPage = () => {
                     </div>
                     <div className="overlap-10">
                       <div className="text-wrapper-19">
-                        {/* <DatePicker  style={{ width: 200, height:40, border: 0 }}  allowClear={false} format="YYYY-MM-DD HH:mm" showTime={true} placeholder="dd-mm-yy" onChange={(e) => handleDateChange(e)}/> */}
                         <RangePicker
                           id="datetime"
                           style={{ width: 320, height:40, border: 0 }}
@@ -545,20 +511,6 @@ export const VendorDetailsPage = () => {
                 4.5/5
               </span>
             </p>
-            {/* <Menu
-              className="navbar"
-              divClassName="menu-instance"
-              divClassName1="menu-instance"
-              divClassName2="menu-instance"
-              divClassNameOverride="menu-instance"
-              menuHome="vendors"
-            />
-            <LoginGroup
-              className="login-group-instance"
-              icon={<Login className="login-instance" />}
-              whiteLogin="default"
-            />
-            <SearchBar className="search-bar-instance" text="Hotel" vector="/img/vector.svg" /> */}
             <div className="text-wrapper-31">Venue</div>
             <ElementInformation
               className="thirty-two-information"
@@ -660,267 +612,6 @@ export const VendorDetailsPage = () => {
                 textClassName="testimonial-social-proof-instance"
               />
             </div>
-            {/* <div className="testimonial-social-instance-wrapper">
-              <TestimonialSocial
-                avatar="/img/avatar.png"
-                avatarClassName="testimonial-social-instance"
-                className="testimonial-social-proof"
-                divClassName="testimonial-social-2"
-                ratingStarRow={
-                  <ElementStarFilledWrapper
-                    className="design-component-instance-node-3"
-                    star="/img/star-1.svg"
-                    starClassName="design-component-instance-node-2"
-                  />
-                }
-                ratingStarRowElementStarFilledWrapperElementStarFilledClassName="design-component-instance-node-3"
-                ratingStarRowElementStarFilledWrapperElementStarFilledClassNameOverride="design-component-instance-node-3"
-                ratingStarRowElementStarFilledWrapperImg="/img/star-1-4.svg"
-                ratingStarRowElementStarFilledWrapperImgClassName="design-component-instance-node-2"
-                ratingStarRowElementStarFilledWrapperImgClassNameOverride="design-component-instance-node-2"
-                ratingStarRowElementStarFilledWrapperStar="/img/star-1-1.svg"
-                ratingStarRowElementStarFilledWrapperStar1="/img/star-1-3.svg"
-                ratingStarRowElementStarFilledWrapperStar2="/img/star-1-2.svg"
-                ratingStarRowElementStarFilledWrapperStarClassName="design-component-instance-node-2"
-                ratingStarRowElementStarFilledWrapperStarClassNameOverride="design-component-instance-node-2"
-                ratingStarRowElementStarFilledWrapperStarWrapperClassName="design-component-instance-node-3"
-                ratingStarRowElementStarFilledWrapperStarWrapperClassNameOverride="design-component-instance-node-3"
-                ratingStarRowRatingStarRowClassName="testimonial-social-3"
-                text="Becky J"
-                text1="Seoul, South Korea "
-                text2="What a great experience using eventful! I booked my wedding venue through the platform, it was really smooth and they supported me a lot!Highly recommended! "
-                textClassName="testimonial-social-proof-instance"
-              />
-            </div> */}
-            {/* <div className="rectangle-11" /> */}
-            {/* <div className="calendar-unlock">
-              <div className="overlap-16">
-                <div className="calendar-section">
-                  <ThirtyTwoChevronLeft className="element-chevron-left" />
-                  <BaseCalendar
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName1="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName10="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName11="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName12="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName13="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName14="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName15="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName16="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName17="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName18="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName19="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName2="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName20="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName21="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName22="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName23="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName24="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName25="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName26="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName27="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName28="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName29="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName3="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName30="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName31="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName32="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName33="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName34="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName35="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName36="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName37="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName38="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName39="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName4="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName40="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName41="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName42="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName43="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName44="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName5="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName6="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName7="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName8="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassName9="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateBaseCalendarDateClassNameOverride="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateDivClassName="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateDivClassNameOverride="month-6"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName="month-6"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName1="month-6"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName10="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName11="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName12="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName13="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName14="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName15="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName16="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName17="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName18="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName19="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName2="month-6"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName20="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName21="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName22="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName23="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName24="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName25="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName26="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName27="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName28="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName29="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName3="month-6"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName30="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName31="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName32="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName33="month-8"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName34="month-8"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName35="month-8"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName36="month-8"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName37="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName38="month-8"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName39="month-8"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName4="month-6"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName40="month-8"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName41="month-8"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName42="month-8"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName43="month-8"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName44="month-8"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName45="month-8"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName46="month-8"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName5="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName6="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName7="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName8="month-7"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassName9="month-8"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelClassNameOverride="month-6"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelWrapperClassName="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateLabelWrapperClassNameOverride="month-5"
-                    baseCalendarRowCalendarDateBaseCalendarDateText="31"
-                    baseCalendarRowCalendarDateBaseCalendarDateText1="4"
-                    baseCalendarRowCalendarDateBaseCalendarDateText10="8"
-                    baseCalendarRowCalendarDateBaseCalendarDateText11="12"
-                    baseCalendarRowCalendarDateBaseCalendarDateText12="10"
-                    baseCalendarRowCalendarDateBaseCalendarDateText13="13"
-                    baseCalendarRowCalendarDateBaseCalendarDateText14="14"
-                    baseCalendarRowCalendarDateBaseCalendarDateText15="18"
-                    baseCalendarRowCalendarDateBaseCalendarDateText16="16"
-                    baseCalendarRowCalendarDateBaseCalendarDateText17="15"
-                    baseCalendarRowCalendarDateBaseCalendarDateText18="19"
-                    baseCalendarRowCalendarDateBaseCalendarDateText19="17"
-                    baseCalendarRowCalendarDateBaseCalendarDateText2="2"
-                    baseCalendarRowCalendarDateBaseCalendarDateText20="20"
-                    baseCalendarRowCalendarDateBaseCalendarDateText21="21"
-                    baseCalendarRowCalendarDateBaseCalendarDateText22="25"
-                    baseCalendarRowCalendarDateBaseCalendarDateText23="23"
-                    baseCalendarRowCalendarDateBaseCalendarDateText24="22"
-                    baseCalendarRowCalendarDateBaseCalendarDateText25="26"
-                    baseCalendarRowCalendarDateBaseCalendarDateText26="24"
-                    baseCalendarRowCalendarDateBaseCalendarDateText27="27"
-                    baseCalendarRowCalendarDateBaseCalendarDateText28="28"
-                    baseCalendarRowCalendarDateBaseCalendarDateText29="4"
-                    baseCalendarRowCalendarDateBaseCalendarDateText3="1"
-                    baseCalendarRowCalendarDateBaseCalendarDateText30="2"
-                    baseCalendarRowCalendarDateBaseCalendarDateText31="Subscribe1"
-                    baseCalendarRowCalendarDateBaseCalendarDateText32="5"
-                    baseCalendarRowCalendarDateBaseCalendarDateText33="3"
-                    baseCalendarRowCalendarDateBaseCalendarDateText34="6"
-                    baseCalendarRowCalendarDateBaseCalendarDateText35="7"
-                    baseCalendarRowCalendarDateBaseCalendarDateText36="11"
-                    baseCalendarRowCalendarDateBaseCalendarDateText37="9"
-                    baseCalendarRowCalendarDateBaseCalendarDateText38="8"
-                    baseCalendarRowCalendarDateBaseCalendarDateText39="12"
-                    baseCalendarRowCalendarDateBaseCalendarDateText4="5"
-                    baseCalendarRowCalendarDateBaseCalendarDateText40="10"
-                    baseCalendarRowCalendarDateBaseCalendarDateText41="13"
-                    baseCalendarRowCalendarDateBaseCalendarDateText5="3"
-                    baseCalendarRowCalendarDateBaseCalendarDateText6="6"
-                    baseCalendarRowCalendarDateBaseCalendarDateText7="7"
-                    baseCalendarRowCalendarDateBaseCalendarDateText8="11"
-                    baseCalendarRowCalendarDateBaseCalendarDateText9="9"
-                    baseCalendarRowCalendarDateBaseCalendarDateWrapperClassName="month-4"
-                    baseCalendarRowCalendarDateBaseCalendarDateWrapperClassNameOverride="month-4"
-                    baseCalendarRowCalendarDateDivClassName="month-4"
-                    baseCalendarRowCalendarDateDivClassNameOverride="month-4"
-                    baseCalendarRowCalendarDateStateAdjacentMonthClassName="month-4"
-                    baseCalendarRowCalendarDateStateAdjacentMonthClassNameOverride="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName1="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName10="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName11="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName12="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName13="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName14="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName15="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName16="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName17="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName18="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName19="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName2="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName20="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName21="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName22="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName23="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName24="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName25="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName26="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName27="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName28="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName29="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName3="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName30="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName31="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName32="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName33="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName4="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName5="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName6="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName7="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName8="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassName9="month-4"
-                    baseCalendarRowCalendarDateStateAvailableClassNameOverride="month-4"
-                    baseCalendarRowCalendarDateStateDayOfWeekClassName="month-4"
-                    baseCalendarRowCalendarDateStateDayOfWeekClassNameOverride="month-4"
-                    baseCalendarRowCalendarDateStateHoverClassName="month-4"
-                    baseCalendarRowCalendarDateStateHoverClassNameOverride="month-4"
-                    baseCalendarRowCalendarDateStateProp="available"
-                    baseCalendarRowCalendarDateStateProp1="available"
-                    baseCalendarRowCalendarDateStateProp10="adjacent-month"
-                    baseCalendarRowCalendarDateStateProp2="available"
-                    baseCalendarRowCalendarDateStateProp3="available"
-                    baseCalendarRowCalendarDateStateProp4="adjacent-month"
-                    baseCalendarRowCalendarDateStateProp5="adjacent-month"
-                    baseCalendarRowCalendarDateStateProp6="adjacent-month"
-                    baseCalendarRowCalendarDateStateProp7="adjacent-month"
-                    baseCalendarRowCalendarDateStateProp8="adjacent-month"
-                    baseCalendarRowCalendarDateStateProp9="adjacent-month"
-                    baseCalendarRowCalendarDateStateSelectedClassName="month-4"
-                    baseCalendarRowCalendarDateStateSelectedClassNameOverride="month-4"
-                    baseCalendarRowCalendarDateStateUnavailableClassName="month-4"
-                    baseCalendarRowCalendarDateStateUnavailableClassNameOverride="month-4"
-                    className="base-calendar-instance"
-                    monthClassName="month-2"
-                    monthYearClassName="month-3"
-                    text="Februrary 2021"
-                  />
-                  <ThirtyTwoChevronRight className="element-chevron-right" />
-                </div>
-                <div className="calendar-section-2" />
-              </div>
-            </div> */}
-            {/* <div className="rectangle-12" />
-            <p className="unlock-membership">
-              <span className="text-wrapper-32">
-                Unlock Membership
-                <br />
-                Booking Experience
-                <br />
-                <br />
-              </span>
-              <span className="text-wrapper-33">Subscribe</span>
-              <span className="text-wrapper-34">&nbsp;</span>
-              <span className="text-wrapper-35">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Maybe later</span>
-            </p> */}
           </div>
           <footer className="footer">
             <div className="group-6">

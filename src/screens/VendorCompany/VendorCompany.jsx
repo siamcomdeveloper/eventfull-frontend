@@ -109,7 +109,6 @@ export const VendorCompany = () => {
   }, []);
 
   useEffect(() => {
-    // console.log('in useEffect setFieldsValue');
     form.setFieldsValue({
       _id: data._id,
       userId: data.userId,
@@ -135,7 +134,6 @@ export const VendorCompany = () => {
 
 
   const signOut = () => {
-    // console.log("signOut click");
     removeJwtToken();
   
     setTimeout(() => {
@@ -160,7 +158,6 @@ export const VendorCompany = () => {
   function handle(e) {
     const newData = { ...data };
     newData[e.target.id] = e.target.value;
-    // console.log(newData);
     setData(newData);
   }
 
@@ -168,7 +165,6 @@ export const VendorCompany = () => {
     console.log(`selected ${value}`);
     const newData = { ...data };
     newData['location'] = value;
-    // console.log(newData);
     setData(newData);
   };
 
@@ -179,7 +175,6 @@ export const VendorCompany = () => {
     const newData = { ...data };
     newData['category'] = value[0];
     newData['subCategory'] = value[1];
-    // console.log(newData);
     setData(newData);
   };
 
@@ -224,26 +219,6 @@ export const VendorCompany = () => {
           });
         }, 500);
 
-        // if(result.data.role == 1){
-        //   setTimeout(() => {
-        //     messageApi.open({
-        //       type: 'success',
-        //       content: 'Log in successful!',
-        //       duration: 2,
-        //     });
-        //   }, 500);
-        //   setTimeout(function() { window.location = "/vendor-account"; }, 1000);
-        // }
-        // else{
-        //   setTimeout(() => {
-        //     messageApi.open({
-        //       type: 'error',
-        //       content: 'Please login with a customer account!',
-        //       duration: 2,
-        //     });
-        //   }, 500);
-        // }
-        
       })
       .catch((err) => {
         console.log(err.response.data.message);
@@ -349,9 +324,7 @@ export const VendorCompany = () => {
               <div className={`login-group myaccount-group-instance`}>
                 <div className="overlap-group-wrapper">
                   <div className={`overlap-group white-login-default`}>
-                    {/* <a className="login-btn" href='/user-login'>
-                      <Login2 className="login-2-instance" />
-                    </a> */}
+                   
                     <Login2 className="login-2-instance" />
                       <Dropdown
                         overlayClassName="my-account-dropdown"
@@ -379,15 +352,6 @@ export const VendorCompany = () => {
               />
             }
 
-            {/* <div className="login-group">
-              <div className="group">
-                <div className="overlap-group">
-                  <div className="text-wrapper-4">SignOut</div>
-                </div>
-              </div>
-              <div className="text-wrapper-5">Are you a customer?</div>
-            </div> */}
-
             <div className="slogan">
               <div className="rectangle" />
               <div className="slogans">
@@ -398,7 +362,6 @@ export const VendorCompany = () => {
                 Celebrate Your Moments
               </div>
             </div>
-            {/* <div className="rectangle-2" /> */}
             <div className="rectangle-3" />
             <div className="overlap-wrapper" id="anchor">
               <div className="overlap-2">
@@ -419,7 +382,6 @@ export const VendorCompany = () => {
             <div className="title-wrapper">
               <div className="title">
                 <div className="abc">Company</div>
-                {/* <div className="icon-2" /> */}
               </div>
 
               <Form
@@ -436,8 +398,6 @@ export const VendorCompany = () => {
                   <Form.Item
                     name="companyName"
                     label="Company Name"
-                    // rules={[{ required: true, message: 'Please input your company name!' }]}
-                    // style={{width:'180px'}}
                     className='text-wrapper-3'
                   >
                     <Input id="companyName" placeholder="Company name*" value={data.companyName} onChange={(e) => handle(e)}/>
@@ -529,7 +489,6 @@ export const VendorCompany = () => {
 
                   <Select
                     id="location"
-                    // defaultValue={data.location}
                     value={data.location}
                     placeholder="Location"
                     style={{ width: 530, marginTop:20 }}
@@ -573,7 +532,6 @@ export const VendorCompany = () => {
 
                   <div className="title">
                     <div className="abc" style={{left:30}}>Contact</div>
-                    {/* <div className="icon-2" /> */}
                   </div>
                   
                   <Form.Item
@@ -637,92 +595,12 @@ export const VendorCompany = () => {
                   >
                     <Space>
                       <SubmitButton form={form} />
-                      {/* <Button >Edit</Button> */}
                     </Space>
                   </Form.Item>
                 </div>
               </Form>
 
             </div>
-            {/* <div className="frame">
-              <div className="input">
-                <input className="div-2" placeholder="Comapny Name" type="text" />
-                <div className="cheveron" />
-              </div>
-            </div>
-            <div className="input-wrapper">
-              <div className="input">
-                <div className="text-wrapper-10">Owner</div>
-                <div className="cheveron" />
-              </div>
-            </div>
-            <div className="div-wrapper">
-              <div className="input">
-                <div className="text-wrapper-10">Vendor Type</div>
-                <img className="cheveron" alt="Cheveron" src="/img/cheveron.svg" />
-              </div>
-            </div>
-            <div className="frame-2">
-              <div className="input">
-                <input className="div-2" placeholder="Phone Number" type="tel" />
-                <div className="cheveron" />
-              </div>
-            </div>
-            <div className="frame-3">
-              <div className="input">
-                <input className="div-2" placeholder="Email" type="email" />
-                <div className="cheveron" />
-              </div>
-            </div>
-            <div className="frame-4">
-              <div className="input">
-                <input className="div-2" placeholder="Street Address" type="text" />
-                <div className="cheveron" />
-              </div>
-            </div>
-            <div className="text-wrapper-11">Product Description</div>
-            <div className="rectangle-8" />
-            <p className="p">Enter your company description here...</p>
-            <div className="group-3">
-              <IconArrowDown1 className="icon-arrow-down" color="white" />
-              <IconArrowDown2 className="icon-arrow-down-2" />
-              <div className="rectangle-9" />
-            </div>
-            <div className="frame-wrapper">
-              <div className="frame-5">
-                <div className="frame-6">
-                  <IconTickCircle className="icon-tick-circle" />
-                  <p className="text-wrapper-12">Seems Like a good Description</p>
-                </div>
-                <div className="text-wrapper-13">400/500</div>
-              </div>
-            </div>
-            <div className="text-wrapper-14">Company</div>
-            <div className="text-wrapper-15">Contact</div>
-            <div className="button-row">
-              <Button
-                buttonPrimaryIconClassName="design-component-instance-node"
-                className="button-instance"
-                icon={false}
-                iconOnly={false}
-                size="large"
-                stateProp="default"
-                text="Save"
-                type="secondary"
-              />
-              <Button
-                buttonPrimaryIconClassName="button-3"
-                className="button-2"
-                icon={false}
-                iconOnly={false}
-                size="large"
-                stateProp="inactive"
-                text="Edit"
-                type="primary"
-              />
-            </div>
-            <CloudUploadingIcon className="cloud-uploading-icon" />
-            <div className="text-wrapper-16">Upload Pics</div> */}
           </div>
           <footer className="footer">
             <div className="group-wrapper">

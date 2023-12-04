@@ -43,7 +43,6 @@ export const MyBooking = () => {
   const [isHoverVendor, setHoverVendor] = React.useState(false);
   
   const signOut = () => {
-    // console.log("signOut click");
     removeJwtToken();
   
     setTimeout(() => {
@@ -109,8 +108,6 @@ export const MyBooking = () => {
 
   const handleUpdate = (id) => {
     console.log('handleUpdate', id);
-    //(`${process.env.REACT_APP_API_URL}/api/v1/booking/delete/${id}`)
-    
   };
 
   const handleDelete = (id) => {
@@ -202,38 +199,6 @@ export const MyBooking = () => {
         </span>
       ),
     },
-    // {
-    //   title: "Action",
-    //   dataIndex: "operation",
-    //   key: "operation",
-    //   render: (text, record) => (
-    //     <Dropdown
-    //       menu={{
-    //         items: [
-    //           {
-    //             key: "1",
-    //             label: "Edit",
-    //             icon: <EditOutlined />,
-    //             onClick: () => {
-    //               // (window.location.href = `/updateRealtor/${record.id}`)
-    //               handleUpdate(record.id);
-    //             }
-                  
-    //           },
-    //           {
-    //             key: "2",
-    //             label: "Remove",
-    //             danger: true,
-    //             icon: <DeleteOutlined />,
-    //             onClick: (e) => handleDelete(record.id),
-    //           },
-    //         ],
-    //       }}
-    //     >
-    //       <a className="action-dropdown">...</a>
-    //     </Dropdown>
-    //   ),
-    // },
   ];
   
   const onChange = (pagination, filters, sorter, extra) => {
@@ -282,9 +247,6 @@ export const MyBooking = () => {
               <div className={`login-group myaccount-group-instance`}>
                 <div className="overlap-group-wrapper">
                   <div className={`overlap-group white-login-default`}>
-                    {/* <a className="login-btn" href='/user-login'>
-                      <Login2 className="login-2-instance" />
-                    </a> */}
                     <Login2 className="login-2-instance" />
                       <Dropdown
                         overlayClassName="my-account-dropdown"
@@ -320,30 +282,10 @@ export const MyBooking = () => {
               /> : <div></div>
             }
 
-            {/* <Menu
-              className="navbar"
-              divClassName="menu-instance"
-              divClassName1="menu-instance"
-              divClassName2="menu-instance"
-              divClassNameOverride="menu-instance"
-              menuHome="default"
-            />
-            
-            <div className="login-group">
-              <div className="overlap-group">
-                <div className="login">
-                  <div className="ellipse" />
-                  <img className="img" alt="Ellipse" src="/img/ellipse-8.svg" />
-                </div>
-                <div className="text-wrapper-4">MyAccount</div>
-              </div>
-            </div> */}
-
             <div className="group" id="anchor">
               <div className="group-2">
                 <div className="overlap-group-2">
                   <div className="rectangle-2" />
-                  {/* <p className="p">You do not create any booking yet.</p> */}
 
                   <div
                     style={{
@@ -375,91 +317,7 @@ export const MyBooking = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="categories">
-              <div className="enjoy-planning-your">
-                <p className="text-wrapper-7">Start to book vendor now</p>
-              </div>
-              <div className="venues">
-                <div className="overlap-group-3">
-                  <div className="overlap-2">
-                    <p className="qui-tempore">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-                    <div className="text-wrapper-8">Explore Venues &gt;&gt;</div>
-                  </div>
-                  <div className="overlap-group-4">
-                    <img className="rectangle-7" alt="Rectangle" src="/img/rectangle-19377-5.png" />
-                    <div className="text-wrapper-9">Popular Venues</div>
-                  </div>
-                </div>
-              </div>
-              <div className="photo">
-                <div className="overlap-group-3">
-                  <div className="overlap-2">
-                    <p className="qui-tempore">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-                    <div className="text-wrapper-8">Explore Venues &gt;&gt;</div>
-                  </div>
-                  <div className="overlap-group-4">
-                    <img className="rectangle-7" alt="Rectangle" src="/img/rectangle-19377-4.png" />
-                    <div className="expert-photography">Expert Photography</div>
-                  </div>
-                </div>
-              </div>
-              <div className="decorations">
-                <div className="overlap-group-3">
-                  <div className="overlap-3">
-                    <div className="text-wrapper-8">Explore Decorations &gt;&gt;</div>
-                    <p className="qui-tempore-2">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-                  </div>
-                  <div className="overlap-group-4">
-                    <img className="rectangle-7" alt="Rectangle" src="/img/rectangle-19377-3.png" />
-                    <div className="text-wrapper-9">
-                      Elegant
-                      <br />
-                      decorations
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="makeup">
-                <div className="overlap-group-3">
-                  <div className="overlap-3">
-                    <div className="text-wrapper-8">Explore Decorations &gt;&gt;</div>
-                    <p className="qui-tempore-2">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-                  </div>
-                  <div className="overlap-group-4">
-                    <img className="rectangle-7" alt="Rectangle" src="/img/rectangle-19377-2.png" />
-                    <div className="text-wrapper-9">
-                      Stylish
-                      <br />
-                      makeup
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="catering">
-                <div className="overlap-group-3">
-                  <div className="overlap-group-5">
-                    <p className="qui-tempore-3">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-                    <div className="text-wrapper-8">Explore Catering&gt;&gt;</div>
-                  </div>
-                  <div className="overlap-group-4">
-                    <img className="rectangle-8" alt="Rectangle" src="/img/rectangle-19377-1.png" />
-                    <div className="text-wrapper-9">Generous Catering</div>
-                  </div>
-                </div>
-              </div>
-              <div className="event-planner">
-                <div className="overlap-group-3">
-                  <div className="overlap-group-5">
-                    <p className="qui-tempore-3">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-                    <div className="text-wrapper-8">Explore Catering&gt;&gt;</div>
-                  </div>
-                  <div className="overlap-group-4">
-                    <img className="rectangle-7" alt="Rectangle" src="/img/rectangle-19377.png" />
-                    <div className="one-stop-event">One-stop Event Planner</div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+           
           </div>
           <footer className="footer">
             <div className="group-wrapper">

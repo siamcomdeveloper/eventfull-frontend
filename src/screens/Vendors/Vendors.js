@@ -63,7 +63,6 @@ export const Vendors = () => {
   }, []);
 
   const signOut = () => {
-    // console.log("signOut click");
     removeJwtToken();
   
     setTimeout(() => {
@@ -126,17 +125,9 @@ export const Vendors = () => {
     if (value <= 1) { 
       setMinValue(0);
       setMaxValue(9);
-      // this.setState({
-      //   minValue: 0,
-      //   maxValue: 9
-      // });
     } else {
       setMinValue(maxValue);
       setMaxValue(value*9);
-      // this.setState({
-      //   minValue: this.state.maxValue,
-      //   maxValue: value * 9
-      // });
     }
   };
 
@@ -273,9 +264,6 @@ export const Vendors = () => {
             <div className={`login-group myaccount-group-instance`}>
               <div className="overlap-group-wrapper">
                 <div className={`overlap-group white-login-default`}>
-                  {/* <a className="login-btn" href='/user-login'>
-                    <Login2 className="login-2-instance" />
-                  </a> */}
                   <Login2 className="login-2-instance" />
                     <Dropdown
                       overlayClassName="my-account-dropdown"
@@ -310,7 +298,6 @@ export const Vendors = () => {
                 spanClassName="category-drop-down-2"
               /> : <div></div>
             }
-            {/* <SearchBar className="search-bar-instance" text="Hotel" vector="/img/vector-7.svg" /> */}
             <div className="text-wrapper-8">Vendors</div>
             
             <div className="group-card site-card-wrapper">
@@ -325,7 +312,6 @@ export const Vendors = () => {
                           hoverable
                           style={{ width: 350 }}
                           cover={<img alt="image" src={item.image} />}
-                          // extra={<a href="#">More</a>}
                         >
                           <Meta title={item.companyName} description={item.description} />
                           <p className='card-viewprice'>{`Viewprice >>`}</p>
@@ -343,144 +329,7 @@ export const Vendors = () => {
                   total={data.length}
                 />
               </div>
-              
             </div>
-
-            
-
-            {/* <div className='group-card'>
-              <List
-                grid={{ gutter: 3, column: 3 }}
-                dataSource={cardData}
-                renderItem={(item) => (
-                  <List.Item>
-                    <Card
-                      hoverable
-                      style={{ width: 350 }}
-                      cover={<img alt="example" src={item.imgUrl} />}
-                    >
-                      <Meta title={item.title} description={item.description} />
-                    </Card>
-                  </List.Item>
-                )}
-              />
-            </div> */}
-            
-            {/* <div className="group-4">
-              <p className="qui-tempore">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-              <img className="rectangle-9" alt="Rectangle" src="/img/rectangle-19377-3.png" />
-              <div className="overlap-4">
-                <div className="text-wrapper-9">Available!</div>
-              </div>
-              <div className="text-wrapper-10">Paris Hilton Hotel</div>
-            </div>
-            <p className="p">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-            <img className="rectangle-10" alt="Rectangle" src="/img/rectangle-19379.png" />
-            <div className="rectangle-11" />
-            <div className="joey-restaurant">Joey Restaurant</div>
-            <div className="group-5">
-              <div className="viewprice">Viewprice &gt;&gt;</div>
-              <img className="vector-4" alt="Vector" src="/img/vector-14.svg" />
-            </div>
-            <div className="group-6">
-              <div className="viewprice-wrapper">
-                <div className="viewprice-2">Viewprice &gt;&gt;</div>
-              </div>
-              <img className="vector-5" alt="Vector" src="/img/vector-16.svg" />
-            </div>
-            <div className="group-7">
-              <div className="viewprice">Viewprice &gt;&gt;</div>
-              <img className="vector-6" alt="Vector" src="/img/vector-14.svg" />
-            </div>
-            <div className="group-8">
-              <p className="qui-tempore">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-              <img className="rectangle-9" alt="Rectangle" src="/img/rectangle-19377-2.png" />
-              <div className="rectangle-12" />
-              <div className="memotime-photography">Memotime Photography</div>
-            </div>
-            <div className="group-9">
-              <div className="text-wrapper-11">1</div>
-              <div className="text-wrapper-12">2</div>
-              <div className="text-wrapper-13">3</div>
-              <div className="text-wrapper-14">4</div>
-              <div className="text-wrapper-15">...</div>
-              <img className="bi-chevron-down" alt="Bi chevron down" src="/img/bi-chevron-down.svg" />
-              <img className="bi-chevron-down-2" alt="Bi chevron down" src="/img/bi-chevron-down-1.svg" />
-            </div>
-            <div className="group-10">
-              <div className="group-11">
-                <div className="overlap-group-4">
-                  <div className="group-12">
-                    <p className="qui-tempore-2">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-                    <div className="rectangle-13" />
-                    <div className="stanley-park">Stanley Park Pavilion</div>
-                  </div>
-                  <div className="viewprice-3">Viewprice &gt;&gt;</div>
-                  <img className="vector-7" alt="Vector" src="/img/vector-15.svg" />
-                  <img className="b-jpg" alt="B jpg" src="/img/b-img171-jpg.png" />
-                </div>
-              </div>
-            </div>
-            <div className="group-13">
-              <div className="overlap-5">
-                <div className="group-14">
-                  <p className="qui-tempore-3">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-                  <div className="rectangle-13" />
-                  <div className="GOOD-MORNING-BAKERY">Good Morning Bakery</div>
-                </div>
-                <div className="viewprice-4">Viewprice &gt;&gt;</div>
-                <img className="vector-8" alt="Vector" src="/img/vector-15.svg" />
-              </div>
-              <img className="b-img-jpg" alt="B jpg" src="/img/b-img168-jpg-1.png" />
-            </div>
-            <div className="group-15">
-              <p className="qui-tempore">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-              <img className="rectangle-9" alt="Rectangle" src="/img/rectangle-19377-3.png" />
-              <div className="overlap-4">
-                <div className="text-wrapper-9">Good Deal！</div>
-              </div>
-              <div className="text-wrapper-10">Paris Hilton Hotel</div>
-            </div>
-            <p className="qui-tempore-4">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-            <img className="rectangle-14" alt="Rectangle" src="/img/rectangle-19379.png" />
-            <div className="rectangle-15" />
-            <div className="joey-restaurant-2">Joey Restaurant</div>
-            <div className="group-16">
-              <div className="viewprice">Viewprice &gt;&gt;</div>
-              <img className="vector-4" alt="Vector" src="/img/vector-14.svg" />
-            </div>
-            <div className="group-17">
-              <div className="viewprice">Viewprice &gt;&gt;</div>
-              <img className="vector-6" alt="Vector" src="/img/vector-14.svg" />
-            </div>
-            <div className="group-18">
-              <div className="overlap-5">
-                <div className="group-14">
-                  <p className="qui-tempore-3">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-                  <div className="rectangle-13" />
-                  <div className="GOOD-MORNING-BAKERY">Good Morning Bakery</div>
-                </div>
-                <div className="viewprice-4">Viewprice &gt;&gt;</div>
-                <img className="vector-8" alt="Vector" src="/img/vector-15.svg" />
-              </div>
-              <img className="b-img-jpg" alt="B jpg" src="/img/b-img168-jpg-1.png" />
-            </div>
-            <div className="group-19">
-              <div className="overlap-6">
-                <img className="vector-9" alt="Vector" src="/img/vector-16.svg" />
-                <div className="overlap-7">
-                  <div className="viewprice-5">Viewprice &gt;&gt;</div>
-                  <div className="group-20">
-                    <p className="qui-tempore-5">Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et.</p>
-                    <div className="rectangle-16" />
-                    <div className="umbrella-events">Umbrella Events</div>
-                    <img className="vector-10" alt="Vector" src="/img/vector-17.svg" />
-                  </div>
-                  <img className="b-jpg" alt="B jpg" src="/img/b-img166-jpg.png" />
-                </div>
-              </div>
-            </div> */}
-
           </div>
           <footer className="footer">
             <div className="group-21">

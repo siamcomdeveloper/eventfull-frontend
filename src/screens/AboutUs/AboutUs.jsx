@@ -17,7 +17,6 @@ export const AboutUs = () => {
   const [isHoverVendor, setHoverVendor] = React.useState(false);
 
   const signOut = () => {
-    // console.log("signOut click");
     removeJwtToken();
   
     setTimeout(() => {
@@ -80,34 +79,9 @@ export const AboutUs = () => {
               </div>
               <div className="text-wrapper-4">About us</div>
               <img className="ellipse" alt="Ellipse" src="./ellipse-634.png" />
-              {/* <Menu
-                className="navbar"
-                divClassName="menu-instance"
-                divClassName1="menu-instance"
-                divClassName2="menu-instance"
-                divClassNameOverride="menu-instance"
-                menuHome="about-us"
-              />
-              <img className="white-logo" alt="White logo" src="/img/whitelogo.png" />
-              <LoginGroup
-                className="login-group-instance"
-                icon={<Login2 className="login-2-instance" />}
-                whiteLogin="default"
-              /> */}
+              
               <a href='/'><img className="white-logo" alt="White logo" src="img/whitelogo.png" /></a>
-              {/* <Menu
-                className="navbar"
-                divClassName="menu-instance"
-                divClassName1="menu-instance"
-                divClassName2="menu-instance"
-                divClassNameOverride="menu-instance"
-                menuHome="home"
-              />
-              <LoginGroup
-                className="login-group-instance"
-                icon={<Login2 className="login-2-instance" />}
-                whiteLogin="default"
-              /> */}
+              
               <div className={`menu navbar`}>
                 <div className={`div menu-home-home menu-instance`}><a className="menu-link" href='/'>Home</a></div>
                 <div className={`div menu-home-home menu-instance`}><div className="menu-link vendor" href='/vendors' onClick={() => { setHoverVendor(!isHoverVendor); }}>Vendors</div></div>
@@ -119,9 +93,7 @@ export const AboutUs = () => {
               <div className={`login-group myaccount-group-instance`}>
                 <div className="overlap-group-wrapper">
                   <div className={`overlap-group white-login-default`}>
-                    {/* <a className="login-btn" href='/user-login'>
-                      <Login2 className="login-2-instance" />
-                    </a> */}
+                   
                     <Login2 className="login-2-instance" />
                       <Dropdown
                         overlayClassName="my-account-dropdown"
@@ -216,7 +188,6 @@ export const AboutUs = () => {
               <div className="group-wrapper">
                 <div className="group">
                   <div className="overlap-group-3">
-                    {/* <img className="line" alt="Line" src="/img/line-3.svg" /> */}
                     <div className="text-wrapper-17">Explore Inspirations</div>
                   </div>
                   <div className="div-wrapper">
@@ -229,7 +200,6 @@ export const AboutUs = () => {
               <div className="group-wrapper">
                 <div className="group-2">
                   <div className="overlap-group-4">
-                    {/* <img className="line-2" alt="Line" src="/img/line-8.svg" /> */}
                     <div className="text-wrapper-17">Explore Cities</div>
                   </div>
                   <div className="button-search-2">

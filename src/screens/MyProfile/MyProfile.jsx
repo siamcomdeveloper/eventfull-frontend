@@ -93,7 +93,6 @@ export const MyProfile = () => {
   }, []);
 
   useEffect(() => {
-    // console.log('in useEffect setFieldsValue');
     form.setFieldsValue({
       _id: data._id,
       userId: data.userId,
@@ -170,26 +169,6 @@ export const MyProfile = () => {
           });
         }, 500);
 
-        // if(result.data.role == 1){
-        //   setTimeout(() => {
-        //     messageApi.open({
-        //       type: 'success',
-        //       content: 'Log in successful!',
-        //       duration: 2,
-        //     });
-        //   }, 500);
-        //   setTimeout(function() { window.location = "/vendor-account"; }, 1000);
-        // }
-        // else{
-        //   setTimeout(() => {
-        //     messageApi.open({
-        //       type: 'error',
-        //       content: 'Please login with a customer account!',
-        //       duration: 2,
-        //     });
-        //   }, 500);
-        // }
-        
       })
       .catch((err) => {
         console.log(err.response.data.message);
@@ -247,9 +226,6 @@ export const MyProfile = () => {
               <div className={`login-group myaccount-group-instance`}>
                 <div className="overlap-group-wrapper">
                   <div className={`overlap-group white-login-default`}>
-                    {/* <a className="login-btn" href='/user-login'>
-                      <Login2 className="login-2-instance" />
-                    </a> */}
                     <Login2 className="login-2-instance" />
                       <Dropdown
                         overlayClassName="my-profile-dropdown"
@@ -308,7 +284,6 @@ export const MyProfile = () => {
             <div className="title-wrapper">
               <div className="title">
                 <div className="abc">Profile</div>
-                {/* <div className="icon-2" /> */}
               </div>
 
               <Form
@@ -326,7 +301,6 @@ export const MyProfile = () => {
                       name="username"
                       label="Name"
                       rules={[{ required: true, message: 'Please input your name!' }]}
-                      // style={{width:'180px'}}
                       className='text-wrapper-3'
                     >
                       <Input id="username" placeholder="Name*" value={data.username} onChange={(e) => handle(e)}/>
@@ -371,33 +345,13 @@ export const MyProfile = () => {
                   >
                     <Space>
                       <SubmitButton form={form} />
-                      {/* <Button >Edit</Button> */}
                     </Space>
                   </Form.Item>
                 </div>
               </Form>
 
             </div>
-
-            {/* <TableFlightList className="table-flight-list-version-a" />
-            <Menu
-              className="navbar"
-              divClassName="menu-instance"
-              divClassName1="menu-instance"
-              divClassName2="menu-instance"
-              divClassNameOverride="menu-instance"
-              menuHome="default"
-            /> */}
-
-            {/* <div className="login-group">
-              <div className="overlap-2">
-                <div className="login">
-                  <div className="ellipse" />
-                  <img className="img" alt="Ellipse" src="/img/ellipse-8.svg" />
-                </div>
-                <div className="text-wrapper-8">MyAccount</div>
-              </div>
-            </div> */}
+            
           </div>
 
           <footer className="footer">
